@@ -30,7 +30,7 @@
 
 .construction__title {
     font-size: 2.4rem;
-    color: white;
+    color: #ef942e;
     margin: 1.5rem 0;
 }
 
@@ -48,12 +48,6 @@
     color: white;
 }
 
-.
-
-
-
-
-
 .construction__videos {
     width: 50rem;
     overflow: hidden;
@@ -62,4 +56,61 @@
 .construction__videos video {
     width: 100%;
     
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+    .construction__logo {
+        width: 14rem;
+    }
+
+    .construction__title {
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    .construction__cover {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+
+    .construction__logo {
+        width: 12rem;
+    }
+
+    .construction__title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .construction__description {
+        text-align: center;
+    }
+
+    .construction__socials {
+        width: fit-content;
+        margin-inline: auto;
+    }
+
+    .construction__videos {
+        width: 100%;
+    }
 }
