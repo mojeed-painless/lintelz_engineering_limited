@@ -1,0 +1,65 @@
+.construction__container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-image: url(../images/cover-image.png);
+    background-size: cover;
+    
+}
+
+.construction__cover {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+    padding: 0 6rem;
+}
+
+.construction__logo {
+    width: 16rem;
+    overflow: hidden;
+}
+
+.construction__title {
+    font-size: 2.4rem;
+    color: white;
+    margin: 1.5rem 0;
+}
+
+.construction__description {
+    /* font-size: 1.2rem; */
+    color: white;
+    margin-bottom: 2rem;
+    max-width: 30rem;
+}
+
+.construction__socials {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.
+
+
+
+
+
+.construction__videos {
+    width: 50rem;
+    overflow: hidden;
+}
+
+.construction__videos video {
+    width: 100%;
+    
+}
