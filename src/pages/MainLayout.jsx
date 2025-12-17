@@ -20,7 +20,7 @@ export default function MainLayout() {
 
                 <ul className={`nav__links ${isMenuOpen ? 'active' : ''}`}>
                     {navLinks.map(({ id, name, href }) => (
-                        <li key={id}><Link to={href}>{name}</Link></li>
+                        <li key={id}><Link to={href} onClick={() => setIsMenuOpen(false)}>{name}</Link></li>
                     ))}
                 </ul>
 
@@ -36,6 +36,8 @@ export default function MainLayout() {
                     <button type="button" onClick={() => setIsMenuOpen(mo => !mo)}>{isMenuOpen ? <CgClose /> : <RxHamburgerMenu />}</button>
                 </div>
             </nav>
+
+            {isMenuOpen && <div className="nav__overlay" onClick={() => setIsMenuOpen(false)}></div>}
 
             <main className="main__content">
                 <Outlet />
