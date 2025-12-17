@@ -1,8 +1,7 @@
 import '../assets/styles/construction.css';
+import {socialLinks} from '../data.js';
 import shortClip from '../assets/images/construction-clip.mp4';
 import lintelzLogo2 from '../assets/images/lintelz-logo2.png';
-import { FaWhatsappSquare, FaInstagramSquare, FaFacebookSquare, FaLinkedin } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
 
 
 
@@ -22,21 +21,11 @@ export default function Construction() {
             </p>
 
             <div className="construction__socials">
-              <a href="" target="_blank" rel="noopener noreferrer">
-                <FaWhatsappSquare className="construction__social-icon" />
-              </a>
-              <a href="" target="_blank" rel="noopener noreferrer">
-                <FaInstagramSquare className="construction__social-icon" />
-              </a>
-              <a href="" target="_blank" rel="noopener noreferrer">
-                <FaFacebookSquare className="construction__social-icon" />
-              </a>
-              <a href="" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin className="construction__social-icon" />
-              </a>
-              <a href="" target="_blank" rel="noopener noreferrer">
-                <FaSquareXTwitter className="construction__social-icon" />
-              </a>
+              {socialLinks.map(({ id, href, icon: Icon }) => (
+                <a key={id} href={href} target="_blank" rel="noopener noreferrer">
+                  <Icon className="construction__social-icon" />
+                </a>
+              ))}
             </div>
           </div>
           

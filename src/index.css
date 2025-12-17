@@ -1,3 +1,14 @@
+#root {
+    --color_primary: #0a3749;
+    --color_secondary: #ef9424;
+    --color_accent: #1f1f1f;
+    --color_danger: #ff4c4c;
+    --color_success: #4caf50;
+    --color_warning: #ff9800;
+    --color_info: #1cbdd2;
+}
+
+
 * {
     margin: 0;
     padding: 0;
