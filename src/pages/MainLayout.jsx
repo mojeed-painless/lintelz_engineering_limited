@@ -96,7 +96,7 @@ export default function MainLayout() {
                 <div className="footer__bottom">
                     <p>&copy; {new Date().getFullYear()} Lintelz Engineering Limited.</p>
                     <div className="painless-logo">
-                        <a href="https://www.wa.me/message/EDSOI5ICZRGDB1" target="_blank" rel="noopener noreferrer">
+                        <a href="https://wa.me/2349124323167" target="_blank" rel="noopener noreferrer">
                         Powered by: <img src={painlessLogo} alt="Painless Logo" />
                         </a>
                     </div>
