@@ -1,0 +1,22 @@
+.section-header__title {
+    color: var(--color_primary);
+    margin-bottom: 2rem;
+    border-left: 9px solid var(--color_secondary);
+    padding-left: 0.75rem;
+}
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .section-header__title {
+        border-left: 0;
+        padding-left: 0;
+        border-bottom: 4px solid var(--color_secondary);
+        width: fit-content;
+        margin-inline: auto;
+    }
+}
+

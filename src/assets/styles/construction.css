@@ -1,6 +1,6 @@
 .construction__container {
     width: 100%;
-    height: 100dvh;
+    height: calc(100dvh - 4.5rem);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,7 +49,8 @@
 }
 
 .construction__videos {
-    width: 50rem;
+    /* width: 50rem; */
+    width: 40rem;
     overflow: hidden;
 }
 

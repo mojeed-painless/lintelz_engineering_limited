@@ -10,23 +10,23 @@ export default function Construction() {
     <header className="construction__container">
       <div className="construction__cover">
           <div className="construction__content">
-            <div className="construction__logo">
+            {/* <div className="construction__logo">
               <img src={lintelzLogo2} alt="Lintelz Engineering Limited Logo" />
-            </div>
+            </div> */}
 
-            <h1 className="construction__title">Website is Under Construction</h1>
+            <h1 className="construction__title">This Page is Under Construction</h1>
 
             <p className="construction__description">
               We are working hard to bring you an amazing experience. Stay tuned for updates!
             </p>
 
-            <div className="construction__socials">
+            {/* <div className="construction__socials">
               {socialLinks.map(({ id, href, icon: Icon }) => (
                 <a key={id} href={href} target="_blank" rel="noopener noreferrer">
                   <Icon className="construction__social-icon" />
                 </a>
               ))}
-            </div>
+            </div> */}
           </div>
           
           <div className="construction__videos">

@@ -111,10 +111,26 @@
 
 
 
+
+
+
+
+
+
+
+
 .main__content {
     margin-top: 4.5rem;
     min-height: calc(100dvh - 4.5rem);
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -201,7 +217,7 @@
 
 .painless-logo a {
     color: rgba(255, 255, 255, 0.7);
-    font-size: 0.7rem;
+    font-size: 0.875rem;
 }
 
 .painless-logo:hover {
@@ -401,7 +417,12 @@
         gap: 1rem;
     }
 
-    .painless-logo {
+    .painless-logo img{
         width: 12rem;
+    }
+
+    .painless-logo a {
+        display: flex;
+        gap: 0.5rem;
     }
 }
