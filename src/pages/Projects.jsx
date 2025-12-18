@@ -1,5 +1,6 @@
 import PageHeader from "../components/PageHeader";  
 import Construction from "../components/Construction";
+import '../assets/styles/project.css'
 
 export default function Projects() {
     return (

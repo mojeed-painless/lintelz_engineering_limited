@@ -1,0 +1,19 @@
+.services__page-header {
+    background-image: url(../images/service-header.jpg);
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .services__page-header {
+        background-image: url(../images/service-header-small.jpg);
+    }
+
+    
+}

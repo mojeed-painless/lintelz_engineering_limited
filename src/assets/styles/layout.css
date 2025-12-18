@@ -48,31 +48,33 @@
 .nav__socials a {
     display: flex;
     align-items: center;
-    padding: 0.3rem;
+    /* padding: 0.3rem; */
+    border-radius: 0.3rem;
     transition: all 400ms ease;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .nav__socials a:hover {
     background: transparent;
+    transform: scale(1.2);
 }
 
 .nav__socials a:first-child {
-    background: #749beb;
+    background: #628de2;
 }
 .nav__socials a:first-child:hover {
     background: transparent;
 }
 
 .nav__socials a:nth-child(2) {
-    background: #25D366;
+    background: #0da144;
 }
 .nav__socials a:nth-child(2):hover {
     background: transparent;
 }
 
 .nav__socials a:nth-child(3) {
-    background: #FD1D1D;
+    background: #d40606;
 }
 .nav__socials a:nth-child(3):hover {
     background: transparent;

@@ -1,5 +1,6 @@
 import PageHeader from "../components/PageHeader";
 import Construction from "../components/Construction";
+import '../assets/styles/contact.css'
 
 export default function Contact() {
     return (

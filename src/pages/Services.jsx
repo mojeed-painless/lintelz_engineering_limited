@@ -1,5 +1,6 @@
 import PageHeader from "../components/PageHeader";
 import Construction from "../components/Construction";
+import '../assets/styles/service.css'
 
 export default function Services() {
     return (
