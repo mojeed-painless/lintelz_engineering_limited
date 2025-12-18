@@ -25,6 +25,10 @@
 
 
 @media screen and (max-width: 1024px) {
+    .page-header__container {
+        background-image: url(../images/about-header-medium.jpg);
+    }
+    
     .page-header__cover {
         padding-inline: 3rem;
     }

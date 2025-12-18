@@ -10,6 +10,35 @@
 
 
 
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .contact__page-header {
+        background-image: url(../images/contact-header-medium.jpg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 600px) {
     .contact__page-header {
         background-image: url(../images/contact-header-small.jpg);
@@ -17,3 +46,8 @@
 
     
 }
+
+
+
+
+
