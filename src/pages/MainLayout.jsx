@@ -39,9 +39,24 @@ export default function MainLayout() {
 
             {isMenuOpen && <div className="nav__overlay" onClick={() => setIsMenuOpen(false)}></div>}
 
+
+
+
+
+
+
+
             <main className="main__content">
                 <Outlet />
             </main>
+
+
+
+
+
+
+
+
 
             <footer className="footer__container">
                 <div className="footer__top">
