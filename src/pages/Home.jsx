@@ -93,10 +93,11 @@ export default function Home() {
                                     <img src={image} alt={title} />
                                 </div>
 
-                                <h4>{title}</h4>
-
-                                <small>{description}</small>
-
+                                <div className="project__text">
+                                   <h4>{title}</h4>
+                                    <small>{description}</small> 
+                                </div>
+                                
                                 <button type="button" className='primary-btn'><Link to={action}>Read Project Description</Link></button>
                             </div>
                         ))}

@@ -20,11 +20,11 @@ export const navLinks = [
 ];
 
 export const socialLinks = [
-    { id: 4, href: "https://linkedin.com/in/your-profile", icon: FaLinkedin },
-    { id: 1, href: "https://wa.me/your-number", icon: FaWhatsappSquare },
-    { id: 2, href: "https://instagram.com/your-profile", icon: FaInstagramSquare },
-    { id: 3, href: "https://facebook.com/your-page", icon: FaFacebookSquare },
-    { id: 5, href: "https://twitter.com/your-profile", icon: FaSquareXTwitter }
+    { id: 4, href: "#", icon: FaLinkedin },
+    { id: 1, href: "https://wa.me/2347036814897", icon: FaWhatsappSquare },
+    { id: 2, href: "#", icon: FaInstagramSquare },
+    { id: 3, href: "#", icon: FaFacebookSquare },
+    { id: 5, href: "#", icon: FaSquareXTwitter }
 ];
 
 export const servicesCards = [
