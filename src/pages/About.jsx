@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import PageHeader from "../components/PageHeader";
 import SectionHeader from "../components/SectionHeader";
 import AboutSection from "../components/AboutSection";
+import companyProfile from "../assets/images/Lintelz_Business_Profile.pdf";
 import { aboutMenu, team } from '../data';
 import { GoGoal } from "react-icons/go";
 import { FaBookReader, FaCrosshairs } from "react-icons/fa";
@@ -25,7 +26,7 @@ export default function About() {
                 subtitle="Learn more about our company Goal and Strategy"
                 className="about__page-header" 
             >
-                <button type="button" className='primary-btn'><span><IoDownloadOutline /></span> Download Company Profile</button>
+                <a href={companyProfile} download className='primary-btn'><span><IoDownloadOutline /></span> Download Company Profile</a>
                 <button type="button" onClick={() => setIsMenuOpen(mo => !mo)}>{isMenuOpen ? <CgClose /> : <RxHamburgerMenu />}</button>
             </PageHeader>
 
