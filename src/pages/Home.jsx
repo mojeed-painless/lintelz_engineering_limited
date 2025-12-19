@@ -3,6 +3,8 @@ import { servicesCards, projects } from '../data';
 import cacLogo from '../assets/images/cac-logo.png';
 import firsLogo from '../assets/images/firs-logo.png';
 import efccLogo from '../assets/images/efcc-logo.jpg';
+import borderImage from '../assets/images/border-image.png';
+import smallBorderImage from '../assets/images/border-image-small.png';
 import shortClip from '../assets/images/construction-clip.mp4';
 import SectionHeader from '../components/SectionHeader';
 import '../assets/styles/home.css';
@@ -26,6 +28,10 @@ export default function Home() {
                         </div>
                     </div>
                     
+                    <div className="border__container">
+                        <img src={borderImage} alt="" className='border__desktop'/>
+                        <img src={smallBorderImage} alt="" className='border__mobile'/>
+                    </div>
                 </div>
             </header>
 

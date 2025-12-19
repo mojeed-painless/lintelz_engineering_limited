@@ -38,6 +38,16 @@
     margin-top: 1rem;
 }
 
+.border__container {
+    width: 20rem;
+    position: absolute;
+    bottom: -0.48rem;
+    right: -0.04rem;
+}
+
+.border__mobile {
+    display: none;
+}
 
 
 
@@ -362,6 +372,21 @@
     .hero__buttons {
         justify-content: center;
         flex-wrap: wrap;
+    }
+
+    .border__container {
+        width: 10rem;
+        bottom: -0.04rem;
+        right: -0.04rem;
+
+    }
+
+    .border__desktop {
+        display: none;
+    }
+
+    .border__mobile {
+        display: block;
     }
 
 
