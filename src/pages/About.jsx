@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PageHeader from "../components/PageHeader";
 import SectionHeader from "../components/SectionHeader";
@@ -18,6 +18,16 @@ import '../assets/styles/about.css'
 export default function About() {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 0);  // Set to true if scrolled down
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);  // Cleanup
+    }, []);
 
     return (
         <>
@@ -28,7 +38,7 @@ export default function About() {
             >
                 <a href={companyProfile} download className='primary-btn'><span><IoDownloadOutline /></span> Download Company Profile</a>
                 <button type="button" onClick={() => setIsMenuOpen(mo => !mo)}>{isMenuOpen ? <CgClose /> : <RxHamburgerMenu />}</button>
-                <button type="button" onClick={() => setIsMenuOpen(mo => !mo)}>{isMenuOpen ? <CgClose /> : <RxHamburgerMenu />}</button>
+                {isScrolled && <button type="button" onClick={() => setIsMenuOpen(mo => !mo)}>{isMenuOpen ? <CgClose /> : <RxHamburgerMenu />}</button>}
             </PageHeader>
 
             <div className={`about__menu ${isMenuOpen ? "active-about__menu" : ''}`}>
