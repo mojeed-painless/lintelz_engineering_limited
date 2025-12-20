@@ -23,7 +23,7 @@ export default function Home() {
                             solutions for both residential and commercial projects.
                         </p>
                         <div className="hero__buttons">
-                            <button className="primary-btn">Get in touch</button>
+                            <button className="primary-btn"><a href="https://wa.me/2347036814897" target="_blank" rel="noopener noreferrer">Get in touch</a></button>
                             <button className="primary-btn secondary-btn"><Link to="/about">Learn more</Link></button>
                         </div>
                     </div>

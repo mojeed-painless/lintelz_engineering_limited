@@ -356,6 +356,12 @@
 
 
 @media screen and (max-width: 600px) {
+
+    .hero__container {
+        height: calc(100dvh - 6rem);
+        margin: 0.5rem;
+        margin-top: 5rem;
+    }
     
     
     .hero__overlay {
