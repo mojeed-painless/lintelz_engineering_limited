@@ -5,7 +5,7 @@
 
 .page-header__right .primary-btn {
     background: #b60202;
-    padding: 0.4rem 1.5rem;
+    padding: 0.5rem 1.5rem;
     color: var(--color_light);
     display: flex;
     align-items: center;
@@ -23,7 +23,7 @@
     display: flex;
 }
 
-.page-header__right button:nth-child(2) {
+.page-header__right button {
     background: var(--color_light);
     border: 0;
     padding: 0.4rem 0.7rem;
@@ -33,10 +33,24 @@
     align-items: center;
     cursor: pointer;
     transition: all 400ms ease;
+    position: relative;
+}
+
+.page-header__right button:hover {
+    background: #c0c0c0;
+}
+
+.page-header__right button:nth-child(2) {
+    position: fixed;
+    padding: 0.7rem;
+    right: 7rem;
+    background: var(--color_dark);
+    color: var(--color_light);
+    opacity: 0.2;
 }
 
 .page-header__right button:nth-child(2):hover {
-    background: #c0c0c0;
+    opacity: 0.5;
 }
 
 
@@ -52,7 +66,7 @@
     background: rgba(0, 0, 0, 0.5);
     position: fixed;
     right: -24rem;
-    top: 13.5rem;
+    top: 12.5rem;
     width: 16rem;
     backdrop-filter: blur(10px);
     padding: 1rem;
@@ -188,9 +202,10 @@
 
 
 @media screen and (max-width: 1024px) {
-    .active-about__menu {
+    .page-header__right button:nth-child(2), .active-about__menu {
         right: 4rem;
     }
+
 
 
 
@@ -219,7 +234,9 @@
 
 
 
-
+    .page-header__right button:nth-child(2) {
+        right: 2.7rem;
+    }
 
     .about__menu {
         right: -19rem;
@@ -227,7 +244,7 @@
     }
 
     .active-about__menu {
-        right: 2.5rem;
+        right: 2.7rem;
         transition: all 400ms ease;
     }
 

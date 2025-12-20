@@ -28,10 +28,11 @@ export default function About() {
             >
                 <a href={companyProfile} download className='primary-btn'><span><IoDownloadOutline /></span> Download Company Profile</a>
                 <button type="button" onClick={() => setIsMenuOpen(mo => !mo)}>{isMenuOpen ? <CgClose /> : <RxHamburgerMenu />}</button>
+                <button type="button" onClick={() => setIsMenuOpen(mo => !mo)}>{isMenuOpen ? <CgClose /> : <RxHamburgerMenu />}</button>
             </PageHeader>
 
             <div className={`about__menu ${isMenuOpen ? "active-about__menu" : ''}`}>
-                <button type="button" onClick={() => setIsMenuOpen(mo => !mo)}>{isMenuOpen ? <CgClose /> : <RxHamburgerMenu />}</button>
+                {/* <button type="button" onClick={() => setIsMenuOpen(mo => !mo)}>{isMenuOpen ? <CgClose /> : <RxHamburgerMenu />}</button> */}
 
                 <div className="about__menu-item">
                    {aboutMenu.map(({ id, Icon, title, to }) => (
