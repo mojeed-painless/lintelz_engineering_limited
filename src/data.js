@@ -192,3 +192,61 @@ export const team = [
         portfolio: 'Legal Practitioner',
     },
 ]
+
+
+
+
+export const servicesLists = [
+    {
+        id: 'Architecture',
+        services: [
+            'Site Analysis',
+            'Feasibility Studies',
+            'Preliminary Surveys',
+            'Brief and scope analysis',
+            'Conceptual and Preliminary design',
+            '3D Modelling and Rendering',
+            'Engineering design (Structural, Mechanical, Electrical and Plumbing designs)',
+            'Detailed design and working drawings',
+        ]
+    },
+    {
+        id: 'Consultation',
+        services: [
+            "Complete building construction execution (Residential, Commercial and Institutional buildings)",
+            "Complete infrastructure design and execution (Roads, drainage, highways, bridges, dams, railways, canal lining, etc.)",
+            "Concrete and steel design and construction",
+            "Shoreline and coastal defense",
+            "Material testing",
+            "Non-Destructive Testing (NDT)",
+            "Consultation",
+            "Installation",
+            "On-site supervision",
+            "Periodic supervision and inspection"
+        ]
+    },
+    {
+        id: 'Geotechnic',
+        services: [
+            "Preliminary soil sampling and testing",
+            "Material testing",
+            "Foundation design and construction",
+            "Borehole drilling",
+            "Water treatment services",
+            "Sewage treatment",
+            "Land reclamation",
+            "Ports and jetties"
+        ]
+    },
+    {
+        id: 'Management',
+        services: [
+            "Project planning, initiation, execution and control",
+            "Project scheduling management",
+            "Project estimating and costing",
+            "Project quality control and assurance",
+            "Value engineering",
+            "Project risk analysis and management"
+        ]
+    },
+]

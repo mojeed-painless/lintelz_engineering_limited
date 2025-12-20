@@ -2,6 +2,11 @@
     background-image: url(../images/service-header.jpg);
 }
 
+.services__container section:nth-child(even) {
+    background: white;
+    flex-direction: row-reverse;
+}
+
 
 
 
