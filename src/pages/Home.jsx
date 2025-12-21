@@ -94,18 +94,21 @@ export default function Home() {
                 
                     <div className="project__body">
                         {projects.map(({ id, image, title, description, action }) => (
-                            <div key={id} className="project__card">
-                                <div className="project__image">
-                                    <img src={image} alt={title} />
-                                </div>
 
-                                <div className="project__text">
-                                   <h4>{title}</h4>
-                                    <small>{description}</small> 
+                            (id === 1 || id ===2 || id === 3) && 
+                            
+                                <div key={id} className="project__card">
+                                    <div className="project__image">
+                                        <img src={image} alt={title} />
+                                    </div>
+
+                                    <div className="project__text">
+                                    <h4>{title}</h4>
+                                        <small>{description}</small> 
+                                    </div>
+                                    
+                                    <button type="button" className='primary-btn'><Link to={action}>Read Project Description</Link></button>
                                 </div>
-                                
-                                <button type="button" className='primary-btn'><Link to={action}>Read Project Description</Link></button>
-                            </div>
                         ))}
                     </div>
                 </div>

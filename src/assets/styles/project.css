@@ -2,6 +2,70 @@
     background-image: url(../images/project-header.jpg);
 }
 
+.execute__body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    row-gap: 3rem;
+}
+
+.execute__card {
+    background: var(--color_primary);
+    padding: 2rem;
+    color: var(--color_light);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-radius: 0.5rem;
+    -webkit-box-shadow: 0px 20px 58px -40px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 20px 58px -40px rgba(0,0,0,0.75);
+    box-shadow: 0px 20px 58px -40px rgba(0,0,0,0.75);
+    transition: all 400ms ease;
+}
+
+.execute__card:hover {
+    -webkit-box-shadow: 0px 20px 58px -40px transparent;
+    -moz-box-shadow: 0px 20px 58px -40px transparent;
+    box-shadow: 0px 20px 58px -40px transparent;
+    transform: scale(1.05);
+}
+
+.execute__card:nth-child(even) {
+    background: var(--color_light_gray);
+    color: var(--color_dark_gray);
+}
+
+.execute__card small {
+    color: var(--color_secondary);
+}
+
+.execute__card:nth-child(even) small {
+    color: var(--color_primary);
+}
+
+.execute__card small:first-child {
+    text-align: left;
+    background: var(--color_light);
+    color: var(--color_primary);
+    width: fit-content;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.2rem;
+}
+
+.execute__card:nth-child(even) small:first-child {
+    background: var(--color_primary);
+    color: var(--color_light);
+}
+
+.execute__card p {
+    margin: auto;
+}
+
+.execute__card small:last-child {
+    margin-top: auto;
+}
+
 
 
 
@@ -19,6 +83,10 @@
 @media screen and (max-width: 1024px) {
     .projects__page-header {
         background-image: url(../images/project-header-medium.jpg);
+    }
+
+    .execute__card p {
+        font-size: 0.875rem;
     }
 }
 
@@ -44,5 +112,9 @@
         background-image: url(../images/project-header-small.jpg);
     }
 
+    .execute__body {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    }
     
 }

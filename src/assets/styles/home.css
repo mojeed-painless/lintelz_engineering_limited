@@ -196,9 +196,14 @@
     flex-direction: column-reverse;
 }
 
+.project__card .primary-btn {
+    margin-top: auto;
+}
+
 .project__card:nth-child(even) .primary-btn {
     background: var(--color_secondary);
     margin-bottom: auto;
+    margin-top: unset;
 }
 
 .project__card:nth-child(even) .primary-btn:hover {

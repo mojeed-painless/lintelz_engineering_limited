@@ -75,7 +75,8 @@
     font-size: 1rem;
 }
 
-.contact__right-input input:focus {
+.contact__right-input input:focus,
+.contact__right-input textarea:focus {
     outline: 2px solid var(--color_primary);
     outline-offset: 0.125rem;
 }

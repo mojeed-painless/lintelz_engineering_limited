@@ -14,6 +14,9 @@ import icon6 from './assets/images/icon7.jpg';
 import projectAsset1 from './assets/images/project-asset2.jpg';
 import projectAsset2 from './assets/images/project-asset1.jpg';
 import projectAsset3 from './assets/images/project-asset7.jpg';
+import projectAsset4 from './assets/images/project-asset4.jpg';
+import projectAsset5 from './assets/images/project-asset5.jpg';
+import projectAsset6 from './assets/images/project-asset9.jpg';
 import teamAsset1 from './assets/images/team-asset1.jpg';
 import teamAsset2 from './assets/images/team-asset2.jpg';
 import teamAsset3 from './assets/images/team-asset3.jpg';
@@ -108,7 +111,28 @@ export const projects = [
         title: 'Retaining Wall',
         description: 'Construction of retaining wall, Oghara. Delta State.',
         action: '/projects',
-    }
+    },
+    {
+        id: 4,
+        image: projectAsset4,
+        title: 'School Hostel',
+        description: 'Construction of SCHOOL hostel at The Rehla Academy, Abeokuta, Ogun State.',
+        action: '/projects',
+    },
+    {
+        id: 5,
+        image: projectAsset5,
+        title: 'Residential Vila',
+        description: 'Renovation work for residential vila, Asokoro, Abuja.',
+        action: '/projects',
+    },
+    // {
+    //     id: 6,
+    //     image: projectAsset6,
+    //     title: 'Retaining Wall',
+    //     description: 'Construction of retaining wall, Oghara. Delta State.',
+    //     action: '/projects',
+    // },
 ]
 
 
@@ -248,5 +272,147 @@ export const servicesLists = [
             "Value engineering",
             "Project risk analysis and management"
         ]
+    },
+]
+
+
+
+
+
+
+
+export const executedProjects = [
+    {
+        id: 1,
+        project: 'Supervised the construction of tank base pedestals, rings, and bund walls for both LPG and PMS tanks',
+        time: '(2019-present)',
+    },
+    {
+        id: 2,
+        project: 'Coordinated the construction of rigid pavement and stormwater reservoirs, critical for site infrastructure and drainage management.',
+        time: '(2019-present)',
+    },
+    {
+        id: 3,
+        project: "Supervised the construction of 144 piles for spherical tanks' foundations.",
+        time: '(May 2017 – June 2019)',
+    },
+    {
+        id: 4,
+        project: 'Oversaw the erection of spherical tanks, the welding process and installation of accessories, while ensuring adherence to safety protocols and quality standards.',
+        time: '(May 2017 – June 2019)',
+    },
+    {
+        id: 5,
+        project: 'Oversaw the construction of key civil facilities, including the jetty, substation, administrative building, drainage systems, and site pavements, ensuring efficient and timely completion.',
+        time: '(May 2017 – June 2019)',
+    },
+    {
+        id: 6,
+        project: "Led the comprehensive renovation of a high-end residential villa in Asokoro, managing the transformation of the swimming pool, gym, drivers' lodge, pavilion, and duplexes to meet luxury standards while preserving the original architectural integrity.",
+        time: '(May 2017 – June 2019)',
+    },
+    {
+        id: 7,
+        project: "Supervised structural and aesthetic upgrades of the swimming pool and surrounding area",
+        time: '(May 2017 – June 2019)',
+    },
+    {
+        id: 8,
+        project: 'Oversaw the renovation of the gym.',
+        time: '(May 2017 – June 2019)',
+    },
+    {
+        id: 9,
+        project: 'Managed the construction of school hostels',
+        time: '(2008-2009)',
+    },
+    {
+        id: 10,
+        project: "Led the renovation and conversion of existing residential duplexes into classrooms, clinics, and offices, ensuring that all structural modifications complied with safety regulations and educational facility standards.",
+        time: '(2018-2019)',
+    },
+    {
+        id: 11,
+        project: "Monitoring and Supervision of the construction of 34km of Rivers Channelization and the construction of hydraulic structures across the rivers, Oyo State.",
+        time: '(May, 2023 – June,2024)',
+    },
+    {
+        id: 12,
+        project: "Supervision of the construction of hydraulics structures at Ogbere Tioya, Ibadan for Ibadan Urban Flood Management Project (I.U.F.M.P)",
+        time: '(May, 2023 – June,2024)',
+    },
+    {
+        id: 13,
+        project: "Supervision of the construction of a Pile Foundation for a five floors residential building with a penthouse at Fatai Arobieke street, Lekki Pennisula Scheme, Lagos state.",
+        time: '(May, 2023 – June,2024)',
+    },
+    {
+        id: 14,
+        project: "Rehabilitation of 32km Ejigbo-Ifeodan-Owu Ile, Oyo State boundary road.(Supervision of the construction of hydraulic structures and earth works).",
+        time: '(Nov.2022 – April,2023)',
+    },
+    {
+        id: 15,
+        project: "Supervision of the construction of a Two storey building shopping complex (Brick structure) at Bank Olodo, Oyo State.",
+        time: '(Nov.2022 – April,2023)',
+    },
+    {
+        id: 16,
+        project: "Supervision of a proposed development of a 5 bedroom duplex at Ologede area, Olodo,Ibadan, Oyo state.",
+        time: '(Nov.2022 – April,2023)',
+    },
+    {
+        id: 17,
+        project: "Supervision of the construction of Armoury, commandant's residence, married officers quarters and corporal below quarters and 5kilometers road network of the Nigerian Airforce Institute of Safety, Ipetu Ijesha,Osun state.",
+        time: '(Nov.2022 – April,2023)',
+    },
+    {
+        id: 18,
+        project: "Structural designs of several reinforced concrete structures such as Domestic buildings, Shopping complex, Church auditoriums, Armoury, etc. ",
+        time: '(Nov.2022 – April,2023)',
+    },
+    {
+        id: 19,
+        project: 'Supervision of maintenance works (buildings and infrastrucrures), procurements for Precious Corner Stone University, Ibadan, Oyo State. ',
+        time: '(Nov.2022 – April,2023)',
+    },
+    {
+        id: 20,
+        project: 'Supervision of maintenance work for Caxton building Coldroom for Fan Milk, Eleyele, Ibadan, Oyo State.',
+        time: '(Nov.2022 – April,2023)',
+    },
+    {
+        id: 21,
+        project: 'Supervision of the construction of Crest view academy, Kuje, F.C.T – Abuja.',
+        time: '(Nov.2022 – April,2023)',
+    },
+    {
+        id: 22,
+        project: "Geotechnical Investigation of the cause of the collapse 21 storey building under construction at Gerald road, Ikoyi, Lagos State.",
+    },
+    {
+        id: 23,
+        project: 'Subsoil Investigation for the proposed development for Louisville Towers, Eko Atlantic city, Victoria Island, Lagos State.',
+    },
+    {
+        id: 24,
+        project: 'Subsoil Investigation for the proposed Development of 100units Building in Magodo Estate, Lagos State.',
+    },
+    {
+        id: 25,
+        project: "Subsoil Investigation for the proposed 8.75km Lekki - Regional Road, Lagos State.",
+    },
+    {
+        id: 26,
+        project: 'Subsoil Investigation for the proposed 8.75km Lekki - Regional Road, Lagos State.',
+    },
+    {
+        id: 27,
+        project: 'Subsoil Investigation for the proposed Development at Lagos Entertainment Centre Development (National Theatre), Costain, Lagos State.',
+    },
+    {
+        id: 28,
+        project: 'Subsoil Investigation for the proposed 20 storey Building for Total la definition at Eko Atlantic city, Victoria Island, Lagos State.',
     },
 ]
