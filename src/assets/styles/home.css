@@ -194,11 +194,11 @@
 
 .project__card:nth-child(even) {
     flex-direction: column-reverse;
-
 }
 
 .project__card:nth-child(even) .primary-btn {
     background: var(--color_secondary);
+    margin-bottom: auto;
 }
 
 .project__card:nth-child(even) .primary-btn:hover {

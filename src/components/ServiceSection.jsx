@@ -1,5 +1,5 @@
 import SectionHeader from '../components/SectionHeader';
-import '../assets/styles/service-section.css';
+import '../assets/styles/service.css';
 
 export default function ServiceSection({ id, title, image, children }) {
     return(

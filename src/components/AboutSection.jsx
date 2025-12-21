@@ -1,5 +1,5 @@
 import SectionHeader from '../components/SectionHeader';
-import '../assets/styles/about-section.css';
+import '../assets/styles/about.css';
 
 export default function AboutSection({ id, title, icon: Icon, children}) {
     return(
