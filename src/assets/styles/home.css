@@ -1,7 +1,19 @@
+@keyframes animate {
+    0%, 100% {
+       background-image: url(../images/project-asset10.png); 
+    }
 
+    50% {
+        background-image: url(../images/project-asset12.png); 
+    }
+
+    75% {
+        background-image: url(../images/project-asset11.png); 
+    }
+}
 
 .hero__container {
-    background-image: url(../images/project-asset10.png);
+    
     background-size: cover;
     background-position: center;
     position: relative;
@@ -11,6 +23,7 @@
     margin-top: 5.5rem;
     border-radius: 1rem;
     overflow: hidden;
+    animation: animate 20s infinite ease-in-out;
 }
 
 .hero__overlay {
