@@ -1,8 +1,15 @@
 import PageHeader from "../components/PageHeader";
 import '../assets/styles/contact.css'
 import contactImage from '../assets/images/contact-image.png';
+import { useForm, ValidationError } from '@formspree/react';
 
 export default function Contact() {
+
+    const [state, handleSubmit] = useForm("maqwdgpv");
+    if (state.succeeded) {
+        return <p>Thanks for joining!</p>;
+    }
+
     return (
         <>
             <PageHeader 
@@ -19,28 +26,48 @@ export default function Contact() {
 
                     <div className="contact__right">
                         <h2>We are Here to Help and Ready to Hear from You</h2>
-                        <form action="">
+                        <form action="https://formspree.io/f/maqwdgpv" method="POST" onSubmit={handleSubmit}>
                             <div className="contact__right-input">
                                 <label htmlFor="name">Name:</label>
-                                <input type="text" name="name" id="name" />
+                                <input type="text" name="name" id="name" placeholder="Your Name" required/>
                             </div>
+                            <ValidationError 
+                                prefix="Name" 
+                                field="name"
+                                errors={state.errors}
+                            />
 
                             <div className="contact__right-input">
                                 <label htmlFor="email">Email:</label>
-                                <input type="email" name="email" id="email" />
+                                <input type="email" name="email" id="email" placeholder="Your Email" required/>
                             </div>
+                            <ValidationError 
+                                prefix="Email" 
+                                field="email"
+                                errors={state.errors}
+                            />
 
                             <div className="contact__right-input">
                                 <label htmlFor="subject">Subject:</label>
-                                <input type="text" name="subject" id="subject" />
+                                <input type="text" name="subject" id="subject" placeholder="Subject"/>
                             </div>
+                            <ValidationError 
+                                prefix="Subject" 
+                                field="subject"
+                                errors={state.errors}
+                            />
 
                             <div className="contact__right-input">
                                 <label htmlFor="message">Message:</label>
-                                <textarea name="message" id="message" rows={5}></textarea>                 
+                                <textarea name="message" id="message" rows={5} placeholder="Drop you Message" required></textarea>                 
                             </div>
+                            <ValidationError 
+                                prefix="Message" 
+                                field="message"
+                                errors={state.errors}
+                            />
 
-                            <button type="submit" className="primary-btn">Send Message</button>
+                            <button type="submit" className="primary-btn" disabled={state.submitting}>Send Message</button>
                         </form>
                     </div>
                 </div>
