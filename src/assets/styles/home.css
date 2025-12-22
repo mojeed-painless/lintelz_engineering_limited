@@ -264,6 +264,10 @@
     min-height: 50dvh;
 }
 
+.status__content {
+    width: 100%;
+}
+
 .status__body {
     display: flex;
     justify-content: space-between;
