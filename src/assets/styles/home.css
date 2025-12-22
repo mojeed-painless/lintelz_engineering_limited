@@ -3,8 +3,12 @@
        background-image: url(../images/project-asset10.png); 
     }
 
-    50% {
+    25% {
         background-image: url(../images/project-asset12.png); 
+    }
+
+    50% {
+        background-image: url(../images/project-asset13.jpg); 
     }
 
     75% {
@@ -23,7 +27,7 @@
     margin-top: 5.5rem;
     border-radius: 1rem;
     overflow: hidden;
-    animation: animate 20s infinite ease-in-out;
+    animation: animate 16s infinite ease-in-out;
 }
 
 .hero__overlay {
