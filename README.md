@@ -39,8 +39,8 @@ This is a single-page application (SPA) built as a corporate website for Lintelz
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/lintelz-engineering-limited.git
-   cd lintelz-engineering-limited
+   git clone https://github.com/mojeed-painless/lintelz_engineering_limited.git
+   cd lintelz_engineering_limited
    ```
 
 2. **Install dependencies**
@@ -126,9 +126,10 @@ For technical inquiries or maintenance requests:
 
 **Developer**: [Mojeed]
 - **Email**: [shittumjd00@gmail.com]
-- **LinkedIn**: [Your LinkedIn Profile]
+- **LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/mojeed-shittu)
+- **Whatsapp**: [LinkedIn Profile](https://www.wa.me/2349124323167)
 
-For business inquiries, please contact Lintelz Engineering Limited directly.
+For business inquiries, please contact Lintelz Engineering Limited directly. [lintelz](https://www.lintelz.com)
 
 ## 🙏 Acknowledgments
 
