@@ -4,7 +4,7 @@ import PageHeader from "../components/PageHeader";
 import SectionHeader from "../components/SectionHeader";
 import AboutSection from "../components/AboutSection";
 import companyProfile from "../assets/images/Lintelz_Business_Profile.pdf";
-import { aboutMenu, team } from '../data';
+import { aboutMenu, team, teamProfile } from '../data';
 import { GoGoal } from "react-icons/go";
 import { FaBookReader, FaCrosshairs } from "react-icons/fa";
 import { FaPersonBooth } from "react-icons/fa6";
@@ -19,6 +19,14 @@ export default function About() {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
+    const [isProfileOpen, setIsProfileOpen] = useState(false);
+    const [currentTeamProfile, setCurrentTeamProfile] = useState('');
+
+    function handleProfileClick(member) {
+        setIsProfileOpen(po => !po);
+        setCurrentTeamProfile(member);
+        console.log(member);
+    }
 
     useEffect(() => {
         const handleScroll = () => {
@@ -150,10 +158,70 @@ export default function About() {
                                     <small>{portfolio}</small>
                                 </div>
 
-                                <button type="button" className="primary-btn">Read Profile</button>
+                                <button type="button" className="primary-btn" onClick={() => handleProfileClick(name)}>Read Profile</button>
                             </div>
                         ))}
                     </div>
+                </div>
+            </section>
+
+            <section className={`container profile__container ${!isProfileOpen ? 'active-profile__container' : ''}`}>
+                <div className="profile__content">
+                        <button type="button" onClick={() => setIsProfileOpen(po => !po)}><CgClose /></button>
+
+                        {teamProfile.map((item) => (
+                           currentTeamProfile === item.name && 
+                           
+                           <div key={item.id} className="profile__body">
+                                <div className="profile__body-header">
+                                    <div className="profile__body-image">
+                                        <img src={item.image} alt={item.name} />
+                                    </div>
+
+                                    <div className="profile__body-name">
+                                        <h5>{item.name}</h5>
+                                        <small>{item.portfolio}</small>
+                                    </div>
+                                </div>
+
+                                <div className='profile__body-details'>
+                                    <div className="profile__body-education">
+                                        <h5 className='heading'>Education / Certification</h5>
+                                        
+                                        <div>
+                                            {item.education.map((edu, index) => (
+                                                <div key={index}>
+                                                    {edu.title && <h5>{edu.title}</h5>}
+                                                    <ul>
+                                                        {edu.cert.map((certs, index) => (
+                                                            <li key={index}>{certs}</li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+
+                                    <div className="profile__body-experience">
+                                        <h5 className='heading'>Work Experience <span>({item.yearsOfExperience} years of experience)</span></h5>
+                                        
+                                        <div>
+                                            {item.experience.map((exp, index) => (
+                                                <div key={index}>
+                                                    {exp.title && <h5>{exp.title}</h5>}
+                                                    <ul>
+                                                        {exp.responsibility.map((res, index) => (
+                                                            <li key={index}>{res}</li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        ))}
+
                 </div>
             </section>
 

@@ -220,6 +220,451 @@ export const team = [
 
 
 
+
+export const teamProfile = [
+    { 
+        id: 1, 
+        image: teamAsset1,
+        name: 'ENGR. OLAWUYI AFOLABI RIDWAN',
+        portfolio: 'Executive Director',
+        yearsOfExperience: '4',
+        education: [
+            {
+                cert: [
+                    "Project Management: Project Management Professionals, PMP (In progress)",
+                    "Google Project Management Certification 2020",
+                    "B Eng. Civil Engineering (B.Eng.) - Civil Engineering 2016 University of Ilorin, Ilorin, Kwara State."
+                ]
+            }
+        ],  
+        experience: [
+            {
+                responsibility: [
+                    "Supervised the construction of the 3 storey building for the proposed residential development for WESTLINK HERITAGE COURT at Palmgrove, Lagos state. (ongoing)"
+                ],
+            },
+            {
+                responsibility: [
+                    "Supervised the 4 bedroom duplex residential building at Idimu, Lagos state. (ongoing) Bullrun Resources Limited"
+                ],
+            },
+            {
+                title: "Site Engineer September 2020 – August 2022",
+                responsibility: [
+                    "Assisted in the project planning phase, including work schedule, resource forecasting, and setting of milestones.",
+                    "Monitored construction activities to ensure work was completed according to plans, specifications, and safety standards",
+                    "Inspected materials and workmanship to ensure compliance with quality standards and project requirements",
+                    "Performed surveying tasks to establish correct positions and levels for structures and marked them out on site",
+                    "Worked closely with architects, engineers, contractors, and other professionals to meet project requirements",
+                    "Maintained accurate records of construction activities, progress reports, and project changes",
+                    "Addressed issues arising during the construction process and provided effective solutions",
+                    "Maintained clear communication with all stakeholders, including clients, contractors, and team members",
+                    "Ensured compliance with local building codes, regulations, and standards while monitoring project costs and budgets",
+                    "Assisted in the procurement of materials and equipment for the project",
+                    "Interacted with clients to provide project updates and address concerns"
+                ],
+            },
+        ],
+    },
+
+
+
+
+    { 
+        id: 2, 
+        image: teamAsset2,
+        name: 'ENGR. ADEBUMOLA ISMAILA ABIODUN',
+        portfolio: 'Managing Director',
+        yearsOfExperience: '15',
+        education: [
+            {
+                cert: [
+                    "Master’s in Construction Project Management (MCPM) – University of Ibadan (2020–2023)",
+                    "B.Eng. (Hons) Civil Engineering – University of Ilorin, Kwara State (2013–2016)",
+                    "HND Civil Engineering – Rufus Giwa Polytechnic, Owo (2006–2008)" 
+                ]
+            },
+            {
+                title: 'PROFESSIONAL BODIES & CERTIFICATIONS',
+                cert: [
+                    "Council for the Regulation of Engineering in Nigeria (COREN)",
+                    "Member, Nigeria Society of Engineers (NSE)",
+                    "Member, Nigeria Institute of Civil Engineers (NICE)"
+                ]
+            },
+            {
+                title: 'Professional Training',
+                cert: [
+                    "Project Management Institute (PMI)",
+                    "Google Project Management Certificate (In view)"
+                ]
+            }
+        ],
+        experience: [
+            {
+                responsibility: [
+                    "Led and coordinated the execution of Project Verde’s construction (2019–present)",
+                    "Supervised the construction of tank base pedestals, rings, and bund walls for LPG and PMS tanks (2019–present)",
+                    "Coordinated the construction of rigid pavement and stormwater reservoirs for site infrastructure and drainage management (2019–present)",
+                    "Supervised the construction of 144 piles for spherical tank foundations (May 2017 – June 2019)",
+                    "Oversaw the construction of key civil facilities including jetty, substation, administrative building, drainage systems, and site pavements (May 2017 – June 2019)",
+                    "Led the comprehensive renovation of a high-end residential villa in Asokoro, including swimming pool, gym, drivers’ lodge, pavilion, and duplexes, while preserving architectural integrity (May 2017 – June 2019)",
+                    "Supervised structural and aesthetic upgrades to the swimming pool and surrounding areas (May 2017 – June 2019)",
+                    "Oversaw the renovation of the gym facility (May 2017 – June 2019)",
+                    "Managed the construction of school hostels (2008–2009)",
+                    "Led the renovation and conversion of residential duplexes into classrooms, clinics, and offices in compliance with safety and educational standards (2018–2019)",
+                    "Coordinated design modifications to adapt residential layouts for academic and medical use while maintaining structural integrity (2018–2019)",
+                    "Oversaw the erection of spherical tanks, including welding works and accessory installations, ensuring compliance with safety and quality standards (May 2017 – June 2019)"
+                ]
+            }
+        ]
+    },
+
+
+
+
+    { 
+        id: 3, 
+        image: teamAsset3,
+        name: 'ENGR. AMEEN KOLAPO GARBA',
+        portfolio: 'Project Manager',
+        yearsOfExperience: '8',
+        education: [
+            {
+                cert: [
+                    "B.Eng. Chemical Engineering – University of Ilorin, Ilorin, Kwara State (2016)"
+                ]
+            }
+        ],  
+        experience: [
+            {
+                title: "AMEENKOL ESTATE AND COMMERCIALS LIMITED (MD/CEO) - 2020 - TILL DATE",
+                responsibility: [
+                    "Coordinated and managed the overall affairs of the company",
+                    "Guided clients through proper property documentation, including survey and legal processes",
+                    "Assisted clients in building profitable real estate investment portfolios",
+                    "Sourced issue-free properties on behalf of clients"
+                ],
+            },
+            {
+                title: "OXFORD COMMERCIAL INTERNATIONAL SERVICES LIMITED (SALES TEAM MANAGER) 2018 – 2020",
+                responsibility: [
+                    "Convincing customers to buy a product.",
+                    "Helping customers make selections by building their confidence.",
+                    "Payments are processed by check, cash, or other credit cards.",
+                    "Attending trainings to get updated on the company’s services."
+                ],
+            },
+        ],
+    },
+
+
+
+
+    { 
+        id: 4,
+        image: teamAsset4, 
+        name: 'ENGR. OLAWOYIN INIOLUWA AYODELE',
+        qualification: 'B.TECH, M.E.M, MNSE, R.Engr, MBA in view',
+        portfolio: 'Lead Engineer',
+        yearsOfExperience: '11',
+        education: [
+            {
+                cert: [
+                    "Masters in Business Administration (In view)", 
+                    "Entrepreneurship and Operations Management, School of Business, University of Ibadan, Ibadan, Oyo State",
+                    "Professional Masters in Engineering Project Management 2018 Industrial and Productiion Engineering Department, University of Ibadan, Ibadan, Oyo State",
+                    "Occupational Safety & Health Academy (Supervisor) 2012, Elak Multi Resources, Port Harcourt, Rivers State",
+                    "Bachelor Of Technology in Civil Engineering. (B.Tech) 2006-2011, Ladoke Akintola University Of Technology, Ogbomoso, Oyo State"
+                ]
+            }
+        ],  
+        experience: [
+            {
+                responsibility: [
+                    "Monitoring and Supervision of the construction of 34km of Rivers Channelization and the construction of hydraulic structures across the rivers, Oyo State. (May, 2023 – June,2024)",
+                    "Supervision of the construction of hydraulics structures at Ogbere Tioya ,Ibadan for Ibadan Urban Flood Management Project (I.U.F.M.P) (May, 2023 – June,2024)",
+                    "Supervision of the construction of a Pile Foundation for a five floors residential building with a penthouse at Fatai Arobieke street,Lekki Pennisula Scheme, Lagos state. (May, 2023 – June,2024)",
+                    "Rehabilitation of 32km Ejigbo-Ifeodan-Owu Ile, Oyo State boundary road.(Supervision of the construction of hydraulic structures and earth works). (Nov.2022 – April,2023)",
+                    "Supervision of the construction of a Two storey building shopping complex(Brick structure)at bank olodo, Oyo State. (Nov.2022 – April,2023)",
+                    "Supervision of a proposed development of a 5 bedroom duplex at ologede area,olodo,ibadan,Oyo state. (Nov.2022 – April,2023)",
+                    "Supervision of the construction of Armoury, commandant's residence,married officers quarters and corporal below quarters and 5kilometers road network of the Nigerian Airforce Institute of Safety,Ipetu Ijesha,Osun state. (Nov.2022 – April,2023)",
+                    "Structural designs of several reinforced concrete structures such as domestic buildings,shopping complex,church auditoriums,Armoury,etc. (Nov.2022 – April,2023)",
+                    "Supervision of maintenance works (buildings and infrastrucrures),procurements for Precious Corner Stone University,ibadan ,Oyo State. (Nov.2022 – April,2023)",
+                    "Supervision of maintenance work for Caxton building Coldroom for Fan Milk,Eleyele,ibadan,Oyo state. (Nov.2022 – April,2023)",
+                    "Supervision of the construction of Crest view academy ,Kuje ,F.C.T – Abuja. (Nov.2022 – April,2023)"
+                ],
+            },
+        ],
+    },
+
+
+
+
+    { 
+        id: 5, 
+        image: teamAsset5,
+        name: 'ENGR. LAWAL HAFEEZ OPEYEMI',
+        qualification: 'MNSE, MNICE, MNIGE, COREN No. (R67962)',
+        portfolio: 'Quality Assurance Manager',
+        yearsOfExperience: '8',
+        education: [
+            {
+                cert: [
+                    "Association for Consulting Engineering in Nigeria (ACEN-YPF) (2018)",
+                    "B.Sc. (2nd Class Hons.) Civil Eng., University of Ilorin (2016)",
+                    "National Diploma(Distinction) Civil Eng., Federal Polytechnic, Kaura Namoda Zamfara State (2011)",
+                    "O. Level Certificate, Senior School Certificate (WAEC) (1999)"
+                ]
+            },
+            {
+                title: 'Other Certification',
+                cert: [
+                    "Council for Regulation of Engineering in Nigeria 2022",
+                    "Operation of Humbodlt triaxial Machine (Unconsolidated Undrained test) 2019",
+                    "Operation of Oedometer test machine (Consolidation test) 2018",
+                    "Testing and analysis of samples in accordance with British Standard 2018",
+                    "Data Interpretation and Report Writing 2018"
+                ]
+            }
+        ],  
+        experience: [
+            {
+                title: "PROJECT COORDINATOR OF GEOTECHNICAL INVESTIGATION AND SUPERVISION FOR:",
+                responsibility: [
+                    "Unravelling the cause of the collapse 21 storey building under construction at Gerald road, Ikoyi, Lagos State.",
+                    "Subsoil Investigation for the proposed development for Louisville Towers, Eko Atlantic city, Victoria Island, Lagos State.",
+                    "Subsoil Investigation for the proposed Development of 100units Building in Magodo Estate, Lagos State",
+                    "Subsoil Investigation for the proposed 8.75km Lekki- Regional Road, Lagos State.",
+                    "Subsurface soil Investigation for the proposed 4th Mainland Bridge, Lekki, Lagos State.",
+                    "Subsoil Investigation for the proposed Development at Lagos Entertainment Centre Development (National Theatre), Costain, Lagos State",
+                    "Subsoil Investigation for the proposed 20 storey Building for Total la definition at Eko Atlantic city, Victoria Island, Lagos State."
+                ],
+            },
+            {
+                title: "LABORATORY TESTING AND DATA ANALYSIS FOR PROPOSED DEVELOPMENT FOR:",
+                responsibility: [
+                    "Shell (Snid), Lagos",
+                    "Gt Bank Ado Road, Ajah, Lagos",
+                    "Lagos-Ibadan Rail Project, Omi-Adio, Abeokuta, Ogun State",
+                    "Egan Ayobo Bridge, Igando, Lagos",
+                    "Puma Nig Ltd/Decl, Lagos",
+                    "Lekki Free Trade Zone, Lagos"
+                ],
+            },
+        ],
+    },
+
+
+
+
+    { 
+        id: 6, 
+        image: teamAsset6,
+        name: 'ENGR. JABAR RASHEED TAIWO',
+        portfolio: 'Lead Engineer',
+        yearsOfExperience: '8',
+        education: [
+            {
+                cert: [
+                    "University of llorin, llorin, Nigeria - B.Engr (Hons) Civil Engineering 2016"
+                ]
+            }
+        ],  
+        experience: [
+            {
+                title: "KIMZEE GLOBAL INVESTMENT LIMITED, OSOGBO. JUNE 2024- PRESENT PROJECT ENGINEER",
+                responsibility: [
+                    "Manages the construction of the 4-span Lameco fly-over.",
+                    "Supervise pile drilling, pile cap, pier construction, precast beam installation and capping beam construction.",
+                    "Provides technical supervision, ensuring safety and efficiency.",
+                    "Conducts quality control checks to ensure strict adherence to project specifications.",
+                    "Coordinates equipment utilization to optimize project progress.",
+                    "Compiles and submit regular project reports to stakeholders."
+                ],
+            },
+            {
+                title: "EAGLELINE CONSUITS, 303 HERBERT MACAULAY WAY, YABA, LAGOS. FEB 2023 - FEB 2024 PROJECT MANAGER",
+                responsibility: [
+                    "Supervised and coordinated multiple construction projects, including the construction of two blocks of a four-storey building with a total of 16 units of 3-bedroom flats.",
+                    "Managed a team of site Engineers, providing guidance, training and support to ensure projects objectives were met within established time-lines and budget constraints.",
+                    "Developed and implemented project plans, work schedules and resource allocation strategies to optimize project efficiency and productivity.",
+                    "Conducted regular site inspections and project meetings to review project status, identify potential risks or issues, and implement corrective measures as needed."
+                ],
+            },
+        ],
+    },
+
+
+
+
+    { 
+        id: 7, 
+        image: teamAsset7,
+        name: 'SHITTA—BEY SIRAJDEEN OLABODE',
+        portfolio: 'Chief Surveyor',
+        yearsOfExperience: '21',
+        education: [
+            {
+                cert: [
+                    "HND Surveying and Geoinformatics Yabatech 2001",
+                    "PGD Planning Studies LASU Ojo. 2006",
+                    "PGD-Geographical Information Studies FSS Oyo. 2009",
+                    "Masters Urban Regional Planning LASU Ojo. 2010",
+                    "PD — Surveying and Geoinformatics FSS Oyo. 2016",
+                    "Master in Business Admin (Marketing Option) LASU Ojo. 2019"
+                ]
+            }
+        ],  
+        experience: [
+            {
+                responsibility: [
+                    "ALONGE OGUNMOYERO & CO NIESV PORTHARCOURT (2001 - 2002)",
+                    "LAGOS BUILDING INVESTMENT CO LTD (1996 - 2002)",
+                    "DEEMRANBEY & ASSOCIATES (2001 - 2002)",
+                    "OFFICE OF THE STATE SURVEYOR GENERAL, ALAUSA, LAGOS STATE. (2004 TILL DATE)",
+                    "ZULSIRAJ GLOBAL CONCEPT LTD (2013 TILL DATE)",
+                ]
+            },
+        ],
+    },
+
+
+
+
+    { 
+        id: 8, 
+        image: teamAsset8,
+        name: 'ENGR. AHMED WASIU',
+        portfolio: 'Chief Electrical Officer',
+        yearsOfExperience: '8',
+        education: [
+            {
+                cert: [
+                    "B.Eng. Electrical / Electronic Engineering, University of Ilorin, Ilorin, Kwara State Second Class (Upper) Honours (2011 - 2016)"
+                ]
+            },
+            {
+                title: 'Other Certification',
+                cert: [
+                    "Quality Management System and Safety Training Ariosh Limited, 2017",
+                    "General Health, Safety and Environmental (HSE) Awareness, 2017",
+                    "Project Management Professional (PMP), 2017",
+                    "Health Safety and Environment (HSE) Level 1 & 2, 2017",
+                    "Nigerian Society of Electrical and Electronics Engineering, Member.",
+                    "Nigerian Society of Engineers, Member GMNSE 2018.",
+                    "Council for Regulation of Engineering in Nigeria COREN, 2023."
+                ]
+            }
+        ],  
+        experience: [
+            {
+                title: "INTERNATIONAL ENERGY SERVICES LIMITED / SENIOR I&C DESIGN ENGINEER (SEPT 2024 - TILL DATE)",
+                responsibility: [
+                    "Organized and co-ordinate of design or drafting duties",
+                    "Preparing Instrument and F&G datasheet",
+                    "Develop Instrument and F&G (Index, IO List, Cause and Effect Matrix, MTO, Hookup Drawings, Cable Schedule, Wiring Diagram, Loop Diagram and Location Layout)",
+                    "Preparing Instrument Specification."
+                ],
+            },
+            {
+                title: "Key Projects:",
+                responsibility: [
+                    "NLNG: Hydrogen Gas Detection System for Analyzer Houses",
+                    "TSL: TSL Pipeline System Connecting Dangote Refinery and Petrolex Facility",
+                    "NLNG: Power Improvement to Non-plant Facilities Connected to Substation 28",
+                    "SPDC: SOKU Condensate Spiking System Upgrade"
+                ],
+            },
+            {
+                title: "LABORATORY TESTING AND DATA ANALYSIS FOR PROPOSED DEVELOPMENT FOR:",
+                responsibility: [
+                    "Shell (Snid), Lagos",
+                    "Gt Bank Ado Road, Ajah, Lagos",
+                    "Lagos-Ibadan Rail Project, Omi-Adio, Abeokuta, Ogun State",
+                    "Egan Ayobo Bridge, Igando, Lagos",
+                    "Puma Nig Ltd/Decl, Lagos",
+                    "Lekki Free Trade Zone, Lagos"
+                ],
+            },
+            {
+                responsibility: [
+                    "ARIOSH LIMITED / INTERMEDIATE I&C DESIGN ENGINEER (JUN 2020 – AUG 2024)",
+                    "ARIOSH LIMITED / JUNIOR I&C DESIGN ENGINEER (NOV 2017 - MAY 2020)",
+                    "ARIOSH LIMITED / TRAINEE I&C DESIGN ENGINEER (NOV 2016 - OCT 2017)",
+                ]
+            },
+        ],
+    },
+
+
+
+
+    { 
+        id: 9, 
+        image: teamAsset9,
+        name: 'ENGR. ABDULQUDUS ISHOLA OLOTA',
+        portfolio: 'Safety Officer and Site Engineer',
+        yearsOfExperience: '8',
+        education: [
+            {
+                cert: [
+                    "B.Eng. Chemical Engineering, University of Ilorin, Ilorin, Kwara State. - 2016",
+                    "Graduate Member, Nigerian Society of Engineers",
+                    "Graduate Members, Council for the Regulation of Engineering in Nigeria."
+                ]
+            }
+        ],  
+        experience: [
+            {
+                title: "MUKESON NIG. LTD SITE ENGINEER",
+                responsibility: [
+                    "Construction of hostel complexes at University of Ilorin. 2021",
+                    "Construction of residential duplexes at Osogbo& IBADAN 2021/2022",
+                    "Construction of sub-base and Asphalt laying for a 905m road in Oro Town, 2023"
+                ],
+            },
+            {
+                title: "ARBICO LTD",
+                responsibility: [
+                    "Construction of retaining walls and raft foundations for a 7 storied Ilorin International Hostels. 2023"
+                ],
+            },
+        ],
+    },
+
+
+
+
+    { 
+        id: 10, 
+        image: teamAsset10,
+        name: 'ABDULSALAM OPEYEMI SALAM',
+        portfolio: 'Legal Practitioner',
+        yearsOfExperience: '',
+        education: [
+            {
+                cert: [
+                    "Bar Part II Nigerian Law School, Kano Campus. B.L (Second Class Upper Division) (2021 – 2022)",
+                    "Common and Islamic Law University of Ilorin. LLB. (Second Class Lower Division) (2015 – 2021)"
+                ]
+            }
+        ],  
+        experience: [
+            {
+                responsibility: [
+                    "(2023 – Till Date) Legal Associate, Andrias & Co (Legal Practitioners)",
+                    "(April – May, 2022) Legal Extern, A. O Muhammed & Co (Prime Chambers)",
+                    "(Sept – Oct, 2018) Legal Intern, Yusuf Olaolu Ali & Co",
+                ]
+            },
+        ],
+    },
+]
+
+
+
+
 export const servicesLists = [
     {
         id: 'Architecture',

@@ -37,9 +37,9 @@ export default function Projects() {
                     <SectionHeader title="Executed Projects" />
 
                     <div className="execute__body">
-                        {executedProjects.map(({ id, project, time }) => (
+                        {executedProjects.map(({ id, project, time }, index) => (
                             <div key={id} className="execute__card">
-                                <small>project #{id}</small>
+                                <small>project #{index + 1}</small>
                                 <p>{project}</p>
                                 {time && <small>{time}</small>}
                             </div>

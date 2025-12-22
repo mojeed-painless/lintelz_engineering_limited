@@ -99,7 +99,7 @@
 .about__menu a {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
     padding: 0.5rem;
     border-radius: 0.8rem;
     transition: all 400ms ease;
@@ -226,6 +226,110 @@
     color: var(--color_light_gray);
 }
 
+.profile__container {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    height: 100vh;
+    overflow: auto;
+    align-items: flex-start;
+    opacity: 1;
+    color: var(--color_light);
+    transition: all 600ms ease;
+}
+
+.active-profile__container {
+    opacity: 0;
+    z-index: -1;
+}
+
+.profile__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.profile__content button {
+    background: var(--color_light);
+    border: 0;
+    padding: 0.4rem;
+    border-radius: 0.7rem;
+    font-size: 1.2rem;
+    width: fit-content;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.profile__body {
+    display: flex;
+    gap: 2rem;
+    background: var(--color_primary);
+    padding: 2rem;
+}
+
+.profile__body-header {
+    width: 20rem;
+    white-space: nowrap;
+}
+
+.profile__body-image {
+    width: 10rem;
+}
+
+.profile__body-image img {
+    border-radius: 0.6rem;
+}
+
+.profile__body-name small {
+    color: var(--color_secondary);
+}
+
+.profile__body-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.profile__body-details .heading {
+    background: var(--color_secondary);
+    color: var(--color_primary);
+    padding: 0.2rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.3rem;
+}
+
+.profile__body-details .heading span {
+    color: var(--color_light);
+}
+
+.profile__body-details div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.profile__body-details h5 {
+    color: var(--color_secondary);
+}
+
+.profile__body-details ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.profile__body-details li {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+}
+
+
 
 
 
@@ -285,6 +389,19 @@
     .active-about__menu {
         right: 2rem;
         transition: all 400ms ease;
+    }
+
+    .profile__body {
+        flex-direction: column;
+        padding: 1rem 0.5rem;
+        gap: 1rem;
+    }
+
+    .profile__body-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
 
