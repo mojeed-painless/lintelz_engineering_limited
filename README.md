@@ -6,7 +6,7 @@ A modern, responsive website developed for Lintelz Engineering Limited using Rea
 
 ## 🌟 Project Overview
 
-This is a single-page application (SPA) built as a corporate website for Lintelz Engineering Limited. The website provides information about the company's services, completed projects, company background, and contact details. It features a clean, professional design optimized for both desktop and mobile users.
+This is an application built as a corporate website for Lintelz Engineering Limited. The website provides information about the company's services, completed projects, company background, and contact details. It features a clean, professional design optimized for both desktop and mobile users.
 
 ## ✨ Features
 
