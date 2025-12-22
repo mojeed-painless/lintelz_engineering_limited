@@ -127,7 +127,7 @@ For technical inquiries or maintenance requests:
 **Developer**: [Mojeed]
 - **Email**: [shittumjd00@gmail.com]
 - **LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/mojeed-shittu)
-- **Whatsapp**: [LinkedIn Profile](https://www.wa.me/2349124323167)
+- **Whatsapp**: [Whatsapp](https://wa.me/2349124323167)
 
 For business inquiries, please contact Lintelz Engineering Limited directly. [lintelz](https://www.lintelz.com)
 
