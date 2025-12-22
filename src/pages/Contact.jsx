@@ -20,7 +20,7 @@ export default function Contact() {
                         <p>Form Submitted Successfully</p>
                     </div>
 
-                    <Link to="/contact" className='primary-btn secondary-btn'>Keep Browsing our Website</Link>
+                    <Link to="/" className='primary-btn secondary-btn'>Keep Browsing our Website</Link>
                 </div>
             </section>
         );
