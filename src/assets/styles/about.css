@@ -391,20 +391,8 @@
         transition: all 400ms ease;
     }
 
-    .profile__body {
-        flex-direction: column;
-        padding: 1rem 0.5rem;
-        gap: 1rem;
-    }
-
-    .profile__body-header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-
+    
+    
 
 
 
@@ -459,5 +447,26 @@
 
     .team__card-text small {
         font-size: 1rem;
+    }
+
+
+
+
+
+    .profile__body {
+        flex-direction: column;
+        padding: 1rem 0.5rem;
+        gap: 1rem;
+    }
+
+    .profile__body-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile__body-details li {
+        font-size: 0.875rem;
     }
 }
