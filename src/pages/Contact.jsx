@@ -1,13 +1,29 @@
+import { Link } from 'react-router-dom';
+import { useForm, ValidationError } from '@formspree/react';
 import PageHeader from "../components/PageHeader";
 import '../assets/styles/contact.css'
 import contactImage from '../assets/images/contact-image.png';
-import { useForm, ValidationError } from '@formspree/react';
+import { FaCheckCircle } from "react-icons/fa";
+import { VscSmiley } from "react-icons/vsc";
 
 export default function Contact() {
 
     const [state, handleSubmit] = useForm("maqwdgpv");
     if (state.succeeded) {
-        return <p>Thanks for joining!</p>;
+        return (
+            <section className="container form-status__container">
+                <div className="form-status__content">
+                    <span className='form-status__smiley'><VscSmiley /></span>
+
+                    <div>
+                        <span><FaCheckCircle /></span>
+                        <p>Form Submitted Successfully</p>
+                    </div>
+
+                    <Link to="/contact" className='primary-btn secondary-btn'>Keep Browsing our Website</Link>
+                </div>
+            </section>
+        );
     }
 
     return (
