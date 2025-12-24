@@ -16,7 +16,16 @@ import projectAsset2 from './assets/images/project-asset1.jpg';
 import projectAsset3 from './assets/images/project-asset7.jpg';
 import projectAsset4 from './assets/images/project-asset4.jpg';
 import projectAsset5 from './assets/images/project-asset5.jpg';
-import projectAsset6 from './assets/images/project-asset9.jpg';
+import projectAsset5a from './assets/images/project-asset(5a).jpg';
+import projectAsset9 from './assets/images/project-asset9.jpg';
+import projectAsset9a from './assets/images/project-asset(9a).png';
+import projectAsset9b from './assets/images/project-asset(9b).png';
+import projectAsset9c from './assets/images/project-asset(9c).png';
+import projectAsset13 from './assets/images/project-asset13.jpg';
+import projectAsset13a from './assets/images/project-asset(13a).jpg';
+import projectAsset14 from './assets/images/project-asset14.jpg';
+import projectAsset14a from './assets/images/project-asset(14a).jpg';
+import projectAsset14b from './assets/images/project-asset(14b).jpg';
 import teamAsset1 from './assets/images/team-asset1.jpg';
 import teamAsset2 from './assets/images/team-asset2.jpg';
 import teamAsset3 from './assets/images/team-asset3.jpg';
@@ -97,43 +106,80 @@ export const projects = [
         image: projectAsset1,
         title: 'Cashew Factory',
         description: 'Construction of Cashew factory, Effsow, Mowe, Ogun State.',
-        action: '/projects',
+        gallery: [
+            { src: projectAsset1 },
+        ],
     },
     {
         id: 2,
         image: projectAsset2,
         title: 'Pile Installation',
         description: 'Pile installation Ap tank farm, Ijora, Lagos State.',
-        action: '/projects',
+        gallery: [
+            { src: projectAsset2 },
+        ],
     },
     {
         id: 3,
         image: projectAsset3,
         title: 'Retaining Wall',
         description: 'Construction of retaining wall, Oghara. Delta State.',
-        action: '/projects',
+        gallery: [
+            { src: projectAsset3 },
+        ],
     },
     {
         id: 4,
         image: projectAsset4,
         title: 'School Hostel',
         description: 'Construction of SCHOOL hostel at The Rehla Academy, Abeokuta, Ogun State.',
-        action: '/projects',
+        gallery: [
+            { src: projectAsset4 },
+        ],
     },
     {
         id: 5,
         image: projectAsset5,
         title: 'Residential Vila',
         description: 'Renovation work for residential vila, Asokoro, Abuja.',
-        action: '/projects',
+        gallery: [
+            { src: projectAsset5 },
+            { src: projectAsset5a },
+        ],
     },
-    // {
-    //     id: 6,
-    //     image: projectAsset6,
-    //     title: 'Retaining Wall',
-    //     description: 'Construction of retaining wall, Oghara. Delta State.',
-    //     action: '/projects',
-    // },
+    {
+        id: 9,
+        image: projectAsset9,
+        title: 'Parkview Estate',
+        description: 'Construction of Residential structure at Parkview Estate, Ikoyi, Lagos',
+        gallery: [
+            { src: projectAsset9 },
+            { src: projectAsset9a },
+            { src: projectAsset9b },
+            { src: projectAsset9c },
+        ],
+    },
+    {
+        id: 13,
+        image: projectAsset13,
+        title: 'Millenium Homes',
+        description: 'Construction of Residential Building at The Millenium Homes, Victoria Island Annex, Eti-Osa, Lagos.',
+        gallery: [
+            { src: projectAsset13 },
+            { src: projectAsset13a },
+        ],
+    },
+    {
+        id: 14,
+        image: projectAsset14,
+        title: '4 Bedroom Terrace',
+        description: 'At T.O.O Gemelle Residences, Millenium Housing Estate, Oniru, Victoria Island.',
+        gallery: [
+            { src: projectAsset14 },
+            { src: projectAsset14a },
+            { src: projectAsset14b },
+        ],
+    },
 ]
 
 

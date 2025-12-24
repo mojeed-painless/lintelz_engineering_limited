@@ -1,10 +1,26 @@
-import { Link } from 'react-router-dom'
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import ProjectLightbox from '../components/ProjectLightbox';
 import PageHeader from "../components/PageHeader";
 import SectionHeader from "../components/SectionHeader";  
 import '../assets/styles/project.css';
 import { projects, executedProjects } from '../data';
 
 export default function Projects() {
+
+    const [open, setOpen] = useState(false);
+    const [ currentProject, setCurrentProject ] = useState('');
+
+    function handleOpenBox(projectTitle) {
+        setOpen(true);
+        setCurrentProject(projectTitle);
+    }
+
+    function handleCloseBox() {
+        setOpen(false);
+    }
+
+
     return (
         <>
             <PageHeader 
@@ -15,24 +31,26 @@ export default function Projects() {
 
             <section className="container projects__container">
                 <div className="project__body">
-                    {projects.map(({ id, image, title, description, action }) => (
+                    {projects.map(({ id, image, title, description }) => (
                         <div key={id} className="project__card">
                             <div className="project__image">
                                 <img src={image} alt={title} />
                             </div>
 
                             <div className="project__text">
-                               <h4>{title}</h4>
+                                <h4>{title}</h4>
                                 <small>{description}</small> 
                             </div>
                             
-                            <button type="button" className='primary-btn'><Link to={action}>Read Project Description</Link></button>
+                            <button type="button" className='primary-btn' onClick={() => handleOpenBox(title)}>Read Project Description</button>
                         </div>
                     ))}
                 </div>
             </section>
 
-             <section className="container execute__container">
+            <ProjectLightbox closeBox={handleCloseBox} open={open} currentProject={currentProject}/>
+
+            <section className="container execute__container">
                 <div className="execute__content">
                     <SectionHeader title="Executed Projects" />
 
