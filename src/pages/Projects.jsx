@@ -42,7 +42,7 @@ export default function Projects() {
                                 <small>{description}</small> 
                             </div>
                             
-                            <button type="button" className='primary-btn' onClick={() => handleOpenBox(title)}>Read Project Description</button>
+                            <button type="button" className='primary-btn' onClick={() => handleOpenBox(title)}>Project Gallery</button>
                         </div>
                     ))}
                 </div>
