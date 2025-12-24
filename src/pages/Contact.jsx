@@ -9,6 +9,7 @@ import { VscSmiley } from "react-icons/vsc";
 export default function Contact() {
 
     const [state, handleSubmit] = useForm("maqwdgpv");
+        
     if (state.succeeded) {
         return (
             <section className="container form-status__container">

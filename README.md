@@ -140,4 +140,4 @@ For business inquiries, please contact Lintelz Engineering Limited directly. [li
 ---
 
 *Developed by [Mojeed] - December 2025*
-![Lintelz Engineering Logo](./src/assets/images/pcalogo.png)
+![Painless Logo](./src/assets/images/pcalogo.png)

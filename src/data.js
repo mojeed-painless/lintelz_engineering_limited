@@ -27,6 +27,7 @@ import teamAsset7 from './assets/images/team-asset7.jpg';
 import teamAsset8 from './assets/images/team-asset8.jpg';
 import teamAsset9 from './assets/images/team-asset9.jpg';
 import teamAsset10 from './assets/images/team-asset10.jpg';
+import teamAsset11 from './assets/images/team-asset11.jpg';
 
 
 
@@ -166,6 +167,12 @@ export const team = [
         portfolio: 'Managing Director',
     },
     { 
+        id: 11, 
+        image: teamAsset11,
+        name: 'ENGR. SULAIMAN AJADI',
+        portfolio: 'Construction Manager',
+    },
+    { 
         id: 3, 
         image: teamAsset3,
         name: 'ENGR. AMEEN KOLAPO GARBA',
@@ -207,7 +214,7 @@ export const team = [
         id: 9, 
         image: teamAsset9,
         name: 'ENGR. ABDULQUDUS ISHOLA OLOTA',
-        portfolio: 'Safety Officer and Site Engineer',
+        portfolio: 'Safety Officer',
     },
     { 
         id: 10, 
@@ -319,6 +326,69 @@ export const teamProfile = [
             }
         ]
     },
+
+
+
+
+
+
+
+    { 
+        id: 11, 
+        image: teamAsset11,
+        name: 'ENGR. SULAIMAN AJADI',
+        portfolio: 'Construction Manager',
+        yearsOfExperience: '4',
+        education: [
+            {
+                cert: [
+                    "Bachelor OF Engineering- University Of Ilorin, Ilorin Kwara State (2014) ",
+                    "A-LEVELS, Kwara State Polytechnic, Ilorin, Kwara State. Ilorin, Kwara State. (2008)"
+                ]
+            },
+            {
+                title: 'Professional Certificates',
+                cert: [
+                    "Registered Engineer with Council for Regulation of Engineering in Nigeria (COREN)",
+                    "Member Nigeria Society of Engineers (NSE)",
+                    "Member Nigerian Institute of Civil Engineers (NICE)"
+                ]
+            }
+        ],  
+        experience: [
+            {
+                title: "CHIEF TECHNICAL OFFICER-SPECCONSTRUCT LIMITED (03/2021 – CURRENT)",
+                responsibility: [
+                    "Defined and implemented processes and standards to ensure efficient, sustainable delivery of high-quality services from planning to execution.",
+                    "Expertly managed relationships of team, strategically selecting team players to fulfill the project needs.",
+                    "Designed and implemented, methodologies to achieve projects of qualities in shortest time possible.",
+                    "Managed the Drainage system construction at urban prime 2 Estate for Landwey Investment Limited."
+                ],
+            },
+            {
+                title: "HEAD OF PROJECTS-SPECTARCULHAR STRUCTURES LIMITED (02/2018 – 01/2021)",
+                responsibility: [
+                    "Planned the day to day activities on and off sites, maintained and monitored procurement of materials.",
+                    "Formally represented organisation in negotiations and official events.",
+                    "Controlled Project expenditure in line with organisation budgets to achieve desired results.",
+                    "Coordinated the drainage construction and road woks at Frontier estate for Landwey investment limited"
+                ],
+            },
+            {
+                title: "SITE MANAGER- ARECT Builders Limited (02/2016 – 02/2018)",
+                responsibility: [
+                    "Ensured workforce complied with operational standards and safety regulations by closely monitoring operations.",
+                    "Oversaw the construction of 5 floors structures from start to completion.",
+                    "Managed the reconstruction of Drainage and solid waste system at Jibril Martin Memorial School Iponri.",
+                    "Screened, selected and assisted with training new employees."
+                ],
+            },
+        ],
+    },
+
+
+
+
 
 
 
@@ -604,7 +674,7 @@ export const teamProfile = [
         id: 9, 
         image: teamAsset9,
         name: 'ENGR. ABDULQUDUS ISHOLA OLOTA',
-        portfolio: 'Safety Officer and Site Engineer',
+        portfolio: 'Safety Officer',
         yearsOfExperience: '8',
         education: [
             {
