@@ -17,8 +17,8 @@ import projectAsset3 from './assets/images/project-asset7.jpg';
 import projectAsset4 from './assets/images/project-asset4.jpg';
 import projectAsset5 from './assets/images/project-asset5.jpg';
 import projectAsset5a from './assets/images/project-asset5a.jpg';
-import projectAsset9 from './assets/images/project-asset9.jpg';
-import projectAsset9a from './assets/images/project-asset9a.png';
+import projectAsset9 from './assets/images/project-asset9.png';
+import projectAsset9a from './assets/images/project-asset9a.jpg';
 import projectAsset9b from './assets/images/project-asset9b.png';
 import projectAsset9c from './assets/images/project-asset9c.png';
 import projectAsset13 from './assets/images/project-asset13.jpg';
@@ -26,6 +26,12 @@ import projectAsset13a from './assets/images/project-asset13a.jpg';
 import projectAsset14 from './assets/images/project-asset14.jpg';
 import projectAsset14a from './assets/images/project-asset14a.jpg';
 import projectAsset14b from './assets/images/project-asset14b.jpg';
+import projectAsset14c from './assets/images/project-asset14c.jpg';
+import projectAsset14d from './assets/images/project-asset14d.jpg';
+import projectAsset14e from './assets/images/project-asset14e.jpg';
+import projectAsset14f from './assets/images/project-asset14f.jpg';
+import projectAsset14g from './assets/images/project-asset14g.jpg';
+import projectAsset14h from './assets/images/project-asset14h.jpg';
 import teamAsset1 from './assets/images/team-asset1.jpg';
 import teamAsset2 from './assets/images/team-asset2.jpg';
 import teamAsset3 from './assets/images/team-asset3.jpg';
@@ -102,6 +108,45 @@ export const servicesCards = [
 
 export const projects = [
     {
+        id: 13,
+        image: projectAsset13,
+        title: 'Millenium Homes',
+        description: 'Construction of Residential Building at The Millenium Homes, Victoria Island Annex, Eti-Osa, Lagos.',
+        gallery: [
+            { src: projectAsset13 },
+            { src: projectAsset13a },
+        ],
+    },
+    {
+        id: 9,
+        image: projectAsset9,
+        title: 'Parkview Estate',
+        description: 'Construction of Residential structure at Parkview Estate, Ikoyi, Lagos',
+        gallery: [
+            { src: projectAsset9 },
+            { src: projectAsset9a },
+            { src: projectAsset9b },
+            { src: projectAsset9c },
+        ],
+    },
+    {
+        id: 14,
+        image: projectAsset14,
+        title: '4 Bedroom Terrace',
+        description: 'At T.O.O Gemelle Residences, Millenium Housing Estate, Oniru, Victoria Island.',
+        gallery: [
+            { src: projectAsset14 },
+            { src: projectAsset14a },
+            { src: projectAsset14b },
+            { src: projectAsset14c },
+            { src: projectAsset14d },
+            { src: projectAsset14e },
+            { src: projectAsset14f },
+            { src: projectAsset14g },
+            { src: projectAsset14h },
+        ],
+    },
+    {
         id: 1,
         image: projectAsset1,
         title: 'Cashew Factory',
@@ -145,39 +190,6 @@ export const projects = [
         gallery: [
             { src: projectAsset5 },
             { src: projectAsset5a },
-        ],
-    },
-    {
-        id: 9,
-        image: projectAsset9,
-        title: 'Parkview Estate',
-        description: 'Construction of Residential structure at Parkview Estate, Ikoyi, Lagos',
-        gallery: [
-            { src: projectAsset9 },
-            { src: projectAsset9a },
-            { src: projectAsset9b },
-            { src: projectAsset9c },
-        ],
-    },
-    {
-        id: 13,
-        image: projectAsset13,
-        title: 'Millenium Homes',
-        description: 'Construction of Residential Building at The Millenium Homes, Victoria Island Annex, Eti-Osa, Lagos.',
-        gallery: [
-            { src: projectAsset13 },
-            { src: projectAsset13a },
-        ],
-    },
-    {
-        id: 14,
-        image: projectAsset14,
-        title: '4 Bedroom Terrace',
-        description: 'At T.O.O Gemelle Residences, Millenium Housing Estate, Oniru, Victoria Island.',
-        gallery: [
-            { src: projectAsset14 },
-            { src: projectAsset14a },
-            { src: projectAsset14b },
         ],
     },
 ]

@@ -108,9 +108,9 @@ export default function Home() {
                     <SectionHeader title="Our Recent Projects" className="project__section-header"/>
                 
                     <div className="project__body">
-                        {projects.map(({ id, image, title, description, action }) => (
+                        {projects.map(({ id, image, title, description }, index) => (
 
-                            (id === 1 || id ===2 || id === 3) && 
+                            (index === 0 || index === 1 || index === 2) && 
                             
                                 <div key={id} className="project__card">
                                     <div className="project__image">
