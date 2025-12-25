@@ -1,23 +1,23 @@
 @keyframes animate {
     0%, 100% {
-       background-image: url(../images/project-asset10.png); 
+       background-image: url(../images/project-asset9a.png); 
     }
 
     25% {
-        background-image: url(../images/project-asset12.png); 
+        background-image: url(../images/project-asset9b.png); 
     }
 
     50% {
-        background-image: url(../images/project-asset13.jpg); 
+        background-image: url(../images/project-asset13a.jpg); 
     }
 
     75% {
-        background-image: url(../images/project-asset11.png); 
+        background-image: url(../images/project-asset9c.png); 
     }
 }
 
 .hero__container {
-    
+    /* background-color: var(--color_primary); */
     background-size: cover;
     background-position: center;
     position: relative;
