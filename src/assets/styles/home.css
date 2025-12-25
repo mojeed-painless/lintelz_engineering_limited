@@ -17,7 +17,7 @@
 }
 
 .hero__container {
-    /* background-color: var(--color_primary); */
+    background-color: var(--color_primary);
     background-size: cover;
     background-position: center;
     position: relative;

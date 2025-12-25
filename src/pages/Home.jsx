@@ -1,4 +1,6 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import ProjectLightbox from '../components/ProjectLightbox';
 import { servicesCards, projects } from '../data';
 import cacLogo from '../assets/images/cac-logo.png';
 import firsLogo from '../assets/images/firs-logo.png';
@@ -11,6 +13,19 @@ import '../assets/styles/home.css';
 
 
 export default function Home() {
+
+        const [open, setOpen] = useState(false);
+        const [ currentProject, setCurrentProject ] = useState('');
+    
+        function handleOpenBox(projectTitle) {
+            setOpen(true);
+            setCurrentProject(projectTitle);
+        }
+    
+        function handleCloseBox() {
+            setOpen(false);
+        }
+
     return (
         <>
             <header className="hero__container">
@@ -107,12 +122,13 @@ export default function Home() {
                                         <small>{description}</small> 
                                     </div>
                                     
-                                    <button type="button" className='primary-btn'><Link to={action}>Read Project Description</Link></button>
+                                    <button type="button" className='primary-btn' onClick={() => handleOpenBox(title)}>Project Gallery</button>
                                 </div>
                         ))}
                     </div>
                 </div>
             </section>
+            <ProjectLightbox closeBox={handleCloseBox} open={open} currentProject={currentProject}/>
 
 
 
