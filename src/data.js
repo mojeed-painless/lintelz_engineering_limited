@@ -17,6 +17,18 @@ import projectAsset3 from './assets/images/project-asset7.jpg';
 import projectAsset4 from './assets/images/project-asset4.jpg';
 import projectAsset5 from './assets/images/project-asset5.jpg';
 import projectAsset5a from './assets/images/project-asset5a.jpg';
+import projectAsset6Thumbnail from './assets/images/project-asset6-thumbnaiil.jpg';
+import projectAsset6 from './assets/images/project-asset6.jpg';
+import projectAsset6a from './assets/images/project-asset6a.jpg';
+import projectAsset6b from './assets/images/project-asset6b.jpg';
+import projectAsset6c from './assets/images/project-asset6c.jpg';
+import projectAsset6d from './assets/images/project-asset6d.jpg';
+import projectAsset6e from './assets/images/project-asset6e.jpg';
+import projectAsset6f from './assets/images/project-asset6f.jpg';
+import projectAsset6g from './assets/images/project-asset6g.jpg';
+import projectAsset6h from './assets/images/project-asset6h.jpg';
+import projectAsset6i from './assets/images/project-asset6i.jpg';
+import projectAsset6j from './assets/images/project-asset6j.jpg';
 import projectAsset9 from './assets/images/project-asset9.png';
 import projectAsset9a from './assets/images/project-asset9a.jpg';
 import projectAsset9b from './assets/images/project-asset9b.png';
@@ -29,9 +41,6 @@ import projectAsset14b from './assets/images/project-asset14b.jpg';
 import projectAsset14c from './assets/images/project-asset14c.jpg';
 import projectAsset14d from './assets/images/project-asset14d.jpg';
 import projectAsset14e from './assets/images/project-asset14e.jpg';
-import projectAsset14f from './assets/images/project-asset14f.jpg';
-import projectAsset14g from './assets/images/project-asset14g.jpg';
-import projectAsset14h from './assets/images/project-asset14h.jpg';
 import teamAsset1 from './assets/images/team-asset1.jpg';
 import teamAsset2 from './assets/images/team-asset2.jpg';
 import teamAsset3 from './assets/images/team-asset3.jpg';
@@ -105,13 +114,13 @@ export const servicesCards = [
 
 
 
-
+ 
 export const projects = [
     {
         id: 13,
         image: projectAsset13,
-        title: 'Millenium Homes',
-        description: 'Construction of Residential Building at The Millenium Homes, Victoria Island Annex, Eti-Osa, Lagos.',
+        title: 'Semi Detached 2 Storey Building',
+        description: '3 Units of Semi Detached 2 Storey Building at Millenium Homes, BIS Drive, Victoria Island, Lagos.',
         gallery: [
             { src: projectAsset13 },
             { src: projectAsset13a },
@@ -120,8 +129,8 @@ export const projects = [
     {
         id: 9,
         image: projectAsset9,
-        title: 'Parkview Estate',
-        description: 'Construction of Residential structure at Parkview Estate, Ikoyi, Lagos',
+        title: '4 Bedroom Duplex',
+        description: '4 Bedroom Duplex at Agbon-Ifor Street, Idimu, Lagos',
         gallery: [
             { src: projectAsset9 },
             { src: projectAsset9a },
@@ -132,8 +141,8 @@ export const projects = [
     {
         id: 14,
         image: projectAsset14,
-        title: '4 Bedroom Terrace',
-        description: 'At T.O.O Gemelle Residences, Millenium Housing Estate, Oniru, Victoria Island.',
+        title: 'Millenium Housing Estate',
+        description: '8 Units of 4 Bedroom 2 Storey Terrace at T.O.O Gemelle Residences, Millenium Housing Estate, Oniru, Victoria Island.',
         gallery: [
             { src: projectAsset14 },
             { src: projectAsset14a },
@@ -141,9 +150,25 @@ export const projects = [
             { src: projectAsset14c },
             { src: projectAsset14d },
             { src: projectAsset14e },
-            { src: projectAsset14f },
-            { src: projectAsset14g },
-            { src: projectAsset14h },
+        ],
+    },
+    {
+        id: 6,
+        image: projectAsset6Thumbnail,
+        title: 'Parkview Estate',
+        description: '10 Units of 4 Bedroom 2 Storey Terrace at Parkview Estate, Soule Close off Gerrard Road, Ikoyi.',
+        gallery: [
+            { src: projectAsset6 },
+            { src: projectAsset6a },
+            { src: projectAsset6b },
+            { src: projectAsset6c },
+            { src: projectAsset6d },
+            { src: projectAsset6e },
+            { src: projectAsset6f },
+            { src: projectAsset6g },
+            { src: projectAsset6h },
+            { src: projectAsset6i },
+            { src: projectAsset6j },
         ],
     },
     {
