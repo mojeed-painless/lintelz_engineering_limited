@@ -192,7 +192,7 @@
     align-items: flex-start;
 }
 
-.project__section-header {
+h2.section-header__title.project__section-header {
     color: var(--color_light);
 }
 
