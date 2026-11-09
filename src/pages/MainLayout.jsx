@@ -25,9 +25,9 @@ export default function MainLayout() {
                 </ul>
 
                 <div className="nav__socials">
-                    {socialLinks.map(({ id, href, icon: Icon }) => (
+                    {socialLinks.map(({ id, href, icon: SocialIcon }) => (
                       <a key={id} href={href} target="_blank" rel="noopener noreferrer">
-                        <Icon className="nav__social-icon" />
+                        <SocialIcon className="nav__social-icon" />
                       </a>
                     ))}
                 </div>
@@ -39,24 +39,9 @@ export default function MainLayout() {
 
             {isMenuOpen && <div className="nav__overlay" onClick={() => setIsMenuOpen(false)}></div>}
 
-
-
-
-
-
-
-
             <main className="main__content">
                 <Outlet />
             </main>
-
-
-
-
-
-
-
-
 
             <footer className="footer__container">
                 <div className="footer__top">
@@ -99,9 +84,9 @@ export default function MainLayout() {
                         </div>
 
                         <div className="footer__socials nav__socials">
-                            {socialLinks.map(({ id, href, icon: Icon }) => (
+                            {socialLinks.map(({ id, href, icon: SocialIcon }) => (
                                 <a key={id} href={href} target="_blank" rel="noopener noreferrer">
-                                    <Icon className="footer__social-icon" />
+                                    <SocialIcon className="footer__social-icon" />
                                 </a>
                             ))}
                         </div>

@@ -53,9 +53,9 @@ export default function About() {
                 {/* <button type="button" onClick={() => setIsMenuOpen(mo => !mo)}>{isMenuOpen ? <CgClose /> : <RxHamburgerMenu />}</button> */}
 
                 <div className="about__menu-item">
-                   {aboutMenu.map(({ id, Icon, title, to }) => (
+                   {aboutMenu.map(({ id, title, to, Icon: MenuIcon }) => (
                         <a href={to} key={id}>
-                            <span><Icon /></span>
+                            <span><MenuIcon /></span>
                             <small>{title}</small>
                         </a>
                     ))} 
