@@ -9,7 +9,7 @@ export default function ServiceSection({ id, title, image, children }) {
 
                 <div className="service__body">
                     <div className="service__left">
-                        <img src={image} alt={title} loading="lazy" decoding="async" />
+                        <img src={image} alt={title} />
                     </div>
 
                     <div className="service__right">

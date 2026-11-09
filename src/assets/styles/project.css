@@ -1,5 +1,5 @@
 .projects__page-header {
-    background-image: url(../images/project-header.webp);
+    background-image: url(../images/project-header.jpg);
 }
 
 .execute__body {
@@ -66,9 +66,23 @@
     margin-top: auto;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1024px) {
     .projects__page-header {
-        background-image: url(../images/project-header-medium.webp);
+        background-image: url(../images/project-header-medium.jpg);
     }
 
     .execute__card p {
@@ -76,9 +90,26 @@
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 600px) {
     .projects__page-header {
-        background-image: url(../images/project-header-small.webp);
+        background-image: url(../images/project-header-small.jpg);
     }
 
     .execute__body {

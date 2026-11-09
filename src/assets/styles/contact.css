@@ -19,7 +19,7 @@
 
 
 .contact__page-header {
-    background-image: url(../images/contact-header.webp);
+    background-image: url(../images/contact-header.jpg);
 }
 
 .contact__content {
@@ -151,7 +151,7 @@
 
 @media screen and (max-width: 1024px) {
     .contact__page-header {
-        background-image: url(../images/contact-header-medium.webp);
+        background-image: url(../images/contact-header-medium.jpg);
     }
 }
 
@@ -169,9 +169,12 @@
 
 
 
+
+
+
 @media screen and (max-width: 600px) {
     .contact__page-header {
-        background-image: url(../images/contact-header-small.webp);
+        background-image: url(../images/contact-header-small.jpg);
     }
 
     .contact__container {
