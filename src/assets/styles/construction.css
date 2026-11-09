@@ -6,7 +6,7 @@
     align-items: center;
     position: relative;
     overflow: hidden;
-    background-image: url(../images/cover-image.png);
+    background-image: url(../images/cover-image.webp);
     background-size: cover;
     
 }

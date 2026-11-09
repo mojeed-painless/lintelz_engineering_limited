@@ -1,7 +1,7 @@
 .page-header__container {
     height: 10rem;
     background-color: var(--color_primary);
-    background-image: url(../images/about-header.jpg);
+    background-image: url(../images/about-header.webp);
     background-size: cover;
     display: flex;
     align-items: center;
@@ -34,7 +34,7 @@
 
 @media screen and (max-width: 1024px) {
     .page-header__container {
-        background-image: url(../images/about-header-medium.jpg);
+        background-image: url(../images/about-header-medium.webp);
         
     }
     
@@ -49,7 +49,7 @@
 
 @media screen and (max-width: 600px) {
     .page-header__container {
-        background-image: url(../images/about-header-small.jpg);
+        background-image: url(../images/about-header-small.webp);
         margin: 0.5rem;
         margin-top: 5rem;
     }

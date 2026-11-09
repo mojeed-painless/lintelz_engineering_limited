@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { useForm, ValidationError } from '@formspree/react';
 import PageHeader from "../components/PageHeader";
 import '../assets/styles/contact.css'
-import contactImage from '../assets/images/contact-image.png';
+import contactImage from '../assets/images/contact-image.webp';
 import { FaCheckCircle } from "react-icons/fa";
 import { VscSmiley } from "react-icons/vsc";
 
@@ -38,7 +38,7 @@ export default function Contact() {
             <section className="container contact__container">
                 <div className="contact__content">
                     <div className="contact__left">
-                        <img src={contactImage} alt="Contact Image" />
+                        <img src={contactImage} alt="Contact Image" loading="lazy" decoding="async" />
                     </div>
 
                     <div className="contact__right">

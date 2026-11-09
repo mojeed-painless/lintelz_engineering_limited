@@ -1,5 +1,5 @@
 .services__page-header {
-    background-image: url(../images/service-header.jpg);
+    background-image: url(../images/service-header.webp);
 }
 
 .services__container section:nth-child(even) {
@@ -60,7 +60,7 @@
 
 @media screen and (max-width: 1024px) {
     .services__page-header {
-        background-image: url(../images/service-header-medium.jpg);
+        background-image: url(../images/service-header-medium.webp);
     }
 
     .service__right ul {
@@ -85,7 +85,7 @@
 
 @media screen and (max-width: 600px) {
     .services__page-header {
-        background-image: url(../images/service-header-small.jpg);
+        background-image: url(../images/service-header-small.webp);
     }
 
     .service__header {

@@ -9,7 +9,7 @@ export default function AboutSection({ id, title, icon: Icon, children}) {
 
                 <div className="goal__body">
                     <div className="goal__left">
-                        <Icon />
+                        {Icon ? <Icon /> : null}
                     </div>
 
                     <div className="goal__right">

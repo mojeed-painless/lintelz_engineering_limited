@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import PageHeader from "../components/PageHeader";
 import SectionHeader from "../components/SectionHeader";
@@ -22,20 +22,24 @@ export default function About() {
     const [isProfileOpen, setIsProfileOpen] = useState(false);
     const [currentTeamProfile, setCurrentTeamProfile] = useState('');
 
-    function handleProfileClick(member) {
-        setIsProfileOpen(po => !po);
+    const handleProfileClick = useCallback((member) => {
         setCurrentTeamProfile(member);
-        console.log(member);
-    }
+        setIsProfileOpen((open) => !open);
+    }, []);
 
     useEffect(() => {
         const handleScroll = () => {
-            setIsScrolled(window.scrollY > 0);  // Set to true if scrolled down
+            setIsScrolled(window.scrollY > 0);
         };
 
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);  // Cleanup
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+
+    const selectedProfile = useMemo(
+        () => teamProfile.find((item) => item.name === currentTeamProfile),
+        [currentTeamProfile]
+    );
 
     return (
         <>
@@ -50,18 +54,15 @@ export default function About() {
             </PageHeader>
 
             <div className={`about__menu ${isMenuOpen ? "active-about__menu" : ''}`}>
-                {/* <button type="button" onClick={() => setIsMenuOpen(mo => !mo)}>{isMenuOpen ? <CgClose /> : <RxHamburgerMenu />}</button> */}
-
                 <div className="about__menu-item">
-                   {aboutMenu.map(({ id, Icon, title, to }) => (
-                        <a href={to} key={id}>
-                            <span><Icon /></span>
+                   {aboutMenu.map(({ id, to, title, Icon: MenuIcon }) => (
+                        <a href={to} key={id} onClick={() => setIsMenuOpen(false)}>
+                            <span><MenuIcon /></span>
                             <small>{title}</small>
                         </a>
-                    ))} 
+                    ))}
                 </div>
             </div>
-
 
             <div className="about__container">
             <AboutSection icon={FaBookReader} >
@@ -73,7 +74,6 @@ export default function About() {
                     We are committed to transforming spaces and creating exceptional environments that combine functionality, aesthetics, and sustainability. Whether it's residential, commercial, or mixed-use developments, our team ensures seamless execution from concept development to detailed plans to ensure every project is both visually stunning and highly functional which in turn build trusts and long lasting relationships.
                 </p>
             </AboutSection>
-
 
             <AboutSection id="goal" title="Our Goals" icon={GoGoal} >
                 <p>
@@ -93,7 +93,6 @@ export default function About() {
                 </p>
             </AboutSection>
 
-
             <AboutSection id="principle" title="Cooperate Principle" icon={FaCrosshairs} >
                 <p>
                     At LINTELZ ENGINEERING LIMITED, we embrace innovative design concepts, modern technology, and construction methods to stay ahead in a competitive market while we also Maintain transparency and honesty in all dealings with clients, stakeholders, and regulatory bodies through clear communications before and project execution to adhering to budgets and timelines.
@@ -103,7 +102,6 @@ export default function About() {
                     By doing so, the company hopes to establish itself as a trusted leader in the real estate and construction sectors, known for its ability to adapt to evolving market demands and strong ethical values.
                 </p>
             </AboutSection>
-
 
             <AboutSection id="approach" title="Our Approach" icon={FaPersonBooth} >
                 <p>
@@ -118,7 +116,6 @@ export default function About() {
                     Our client-focused approach ensures seamless execution, delivering exceptional results that exceed expectations.
                 </p>
             </AboutSection>
-
 
             <AboutSection id="strategy" title="Our Strategy" icon={BsCompass} >
                 <p>
@@ -139,9 +136,6 @@ export default function About() {
             </AboutSection>
             </div>
 
-
-
-
             <section className="container team__container" id="team">
                 <div className="team__content">
                     <SectionHeader title="Meet Our Team" className="team__section-header"/>
@@ -150,7 +144,7 @@ export default function About() {
                         {team.map(({ id, image, name, portfolio }) => (
                             <div key={id} className="team__card">
                                 <div className="team__card-image">
-                                    <img src={image} alt={name} />
+                                    <img src={image} alt={name} loading="lazy" decoding="async" />
                                 </div>
 
                                 <div className="team__card-text">
@@ -169,18 +163,16 @@ export default function About() {
                 <div className="profile__content">
                         <button type="button" onClick={() => setIsProfileOpen(po => !po)}><CgClose /></button>
 
-                        {teamProfile.map((item) => (
-                           currentTeamProfile === item.name && 
-                           
-                           <div key={item.id} className="profile__body">
+                        {selectedProfile && (
+                           <div className="profile__body">
                                 <div className="profile__body-header">
                                     <div className="profile__body-image">
-                                        <img src={item.image} alt={item.name} />
+                                        <img src={selectedProfile.image} alt={selectedProfile.name} loading="lazy" decoding="async" />
                                     </div>
 
                                     <div className="profile__body-name">
-                                        <h5>{item.name}</h5>
-                                        <small>{item.portfolio}</small>
+                                        <h5>{selectedProfile.name}</h5>
+                                        <small>{selectedProfile.portfolio}</small>
                                     </div>
                                 </div>
 
@@ -189,12 +181,12 @@ export default function About() {
                                         <h5 className='heading'>Education / Certification</h5>
                                         
                                         <div>
-                                            {item.education.map((edu, index) => (
-                                                <div key={index}>
+                                            {selectedProfile.education.map((edu, index) => (
+                                                <div key={`${selectedProfile.name}-${edu.title || 'education'}-${index}`}>
                                                     {edu.title && <h5>{edu.title}</h5>}
                                                     <ul>
-                                                        {edu.cert.map((certs, index) => (
-                                                            <li key={index}>{certs}</li>
+                                                        {edu.cert.map((certs, certIndex) => (
+                                                            <li key={`${selectedProfile.name}-${edu.title || 'cert'}-${certIndex}`}>{certs}</li>
                                                         ))}
                                                     </ul>
                                                 </div>
@@ -203,15 +195,15 @@ export default function About() {
                                     </div>
 
                                     <div className="profile__body-experience">
-                                        <h5 className='heading'>Work Experience <span>({item.yearsOfExperience} years of experience)</span></h5>
+                                        <h5 className='heading'>Work Experience <span>({selectedProfile.yearsOfExperience} years of experience)</span></h5>
                                         
                                         <div>
-                                            {item.experience.map((exp, index) => (
-                                                <div key={index}>
+                                            {selectedProfile.experience.map((exp, index) => (
+                                                <div key={`${selectedProfile.name}-exp-${index}`}>
                                                     {exp.title && <h5>{exp.title}</h5>}
                                                     <ul>
-                                                        {exp.responsibility.map((res, index) => (
-                                                            <li key={index}>{res}</li>
+                                                        {exp.responsibility.map((res, resIndex) => (
+                                                            <li key={`${selectedProfile.name}-resp-${index}-${resIndex}`}>{res}</li>
                                                         ))}
                                                     </ul>
                                                 </div>
@@ -219,14 +211,11 @@ export default function About() {
                                         </div>
                                     </div>
                                 </div>
-                            </div> 
-                        ))}
+                            </div>
+                        )}
 
                 </div>
             </section>
-
-
-            
         </>
     )
 }

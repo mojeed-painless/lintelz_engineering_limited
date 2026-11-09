@@ -34,7 +34,7 @@ export default function Projects() {
                     {projects.map(({ id, image, title, description }) => (
                         <div key={id} className="project__card">
                             <div className="project__image">
-                                <img src={image} alt={title} />
+                                <img src={image} alt={title} loading="lazy" decoding="async" />
                             </div>
 
                             <div className="project__text">

@@ -2,11 +2,11 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ProjectLightbox from '../components/ProjectLightbox';
 import { servicesCards, projects } from '../data';
-import cacLogo from '../assets/images/cac-logo.png';
-import firsLogo from '../assets/images/firs-logo.png';
-import efccLogo from '../assets/images/efcc-logo.jpg';
-import borderImage from '../assets/images/border-image.png';
-import smallBorderImage from '../assets/images/border-image-small.png';
+import cacLogo from '../assets/images/cac-logo.webp';
+import firsLogo from '../assets/images/firs-logo.webp';
+import efccLogo from '../assets/images/efcc-logo.webp';
+import borderImage from '../assets/images/border-image.webp';
+import smallBorderImage from '../assets/images/border-image-small.webp';
 import shortClip from '../assets/images/construction-clip.mp4';
 import SectionHeader from '../components/SectionHeader';
 import '../assets/styles/home.css';
@@ -56,7 +56,7 @@ export default function Home() {
 
                     <div className="about__body">
                         <div className="about__left">
-                            <video autoPlay loop muted src={shortClip}>
+                            <video autoPlay loop muted src={shortClip} playsInline preload="metadata">
                                 Your browser does not support the video tag.
                             </video>
                         </div>
@@ -139,15 +139,15 @@ export default function Home() {
 
                     <div className="status__body">
                         <div>
-                            <img src={cacLogo} alt='CAC Logo' />
+                            <img src={cacLogo} alt='CAC Logo' loading="lazy" decoding="async" />
                         </div>
 
                         <div>
-                            <img src={firsLogo} alt='FIRS Logo' />
+                            <img src={firsLogo} alt='FIRS Logo' loading="lazy" decoding="async" />
                         </div>
 
                         <div>
-                            <img src={efccLogo} alt='EFCC Logo' />
+                            <img src={efccLogo} alt='EFCC Logo' loading="lazy" decoding="async" />
                         </div>
                     </div>
                 </div>

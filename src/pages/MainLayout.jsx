@@ -2,8 +2,8 @@ import { Outlet, Link } from 'react-router-dom';
 import { useState } from 'react';
 import '../assets/styles/layout.css';
 import { socialLinks, navLinks } from '../data.js';
-import navLogo from '../assets/images/lintelz-logo2.png';
-import painlessLogo from '../assets/images/pcalogo.png';
+import navLogo from '../assets/images/lintelz-logo2.webp';
+import painlessLogo from '../assets/images/pcalogo.webp';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { CgClose } from "react-icons/cg";
 
@@ -15,7 +15,7 @@ export default function MainLayout() {
         <>
             <nav className="nav__container">
                 <div className="nav__logo">
-                    <Link to="/"><img src={navLogo} alt="Lintelz Logo" /></Link>
+                    <Link to="/"><img src={navLogo} alt="Lintelz Logo" loading="eager" decoding="async" /></Link>
                 </div>
 
                 <ul className={`nav__links ${isMenuOpen ? 'active' : ''}`}>
@@ -25,9 +25,9 @@ export default function MainLayout() {
                 </ul>
 
                 <div className="nav__socials">
-                    {socialLinks.map(({ id, href, icon: Icon }) => (
+                    {socialLinks.map(({ id, href, icon: SocialIcon }) => (
                       <a key={id} href={href} target="_blank" rel="noopener noreferrer">
-                        <Icon className="nav__social-icon" />
+                        <SocialIcon className="nav__social-icon" />
                       </a>
                     ))}
                 </div>
@@ -62,7 +62,7 @@ export default function MainLayout() {
                 <div className="footer__top">
                     <div className="footer__left">
                         <div className="footer__logo">
-                            <Link to="/"><img src={navLogo} alt="Lintelz Logo" /></Link>
+                            <Link to="/"><img src={navLogo} alt="Lintelz Logo" loading="eager" decoding="async" /></Link>
                         </div>
 
                         <ul className="footer__links">
@@ -99,9 +99,9 @@ export default function MainLayout() {
                         </div>
 
                         <div className="footer__socials nav__socials">
-                            {socialLinks.map(({ id, href, icon: Icon }) => (
+                            {socialLinks.map(({ id, href, icon: SocialIcon }) => (
                                 <a key={id} href={href} target="_blank" rel="noopener noreferrer">
-                                    <Icon className="footer__social-icon" />
+                                    <SocialIcon className="footer__social-icon" />
                                 </a>
                             ))}
                         </div>
@@ -112,7 +112,7 @@ export default function MainLayout() {
                     <p>&copy; {new Date().getFullYear()} Lintelz Engineering Limited.</p>
                     <div className="painless-logo">
                         <a href="https://painless-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer">
-                        <small>Powered by:</small> <img src={painlessLogo} alt="Painless Logo" />
+                        <small>Powered by:</small> <img src={painlessLogo} alt="Painless Logo" loading="lazy" decoding="async" />
                         </a>
                     </div>
                 </div>
