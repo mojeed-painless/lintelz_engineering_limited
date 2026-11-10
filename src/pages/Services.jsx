@@ -29,7 +29,6 @@ export default function Services() {
 
 
 
-
                 <ServiceSection title="Engineering, Construction and Consultation Services" image={icon2}>
                     <ul className="services__list">
                         {servicesLists.map(({ id, services }) => (
