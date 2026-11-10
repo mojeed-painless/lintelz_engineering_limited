@@ -569,9 +569,9 @@
 /* CTA */
 
 .projects-cta {
-  background: var(--navy);
+  background: var(--navy-dark);
   padding: 75px 8%;
-  margin-bottom: 0.5em;
+  /* margin-bottom: 0.5em; */
   color: white;
   display: flex;
   justify-content: space-between;

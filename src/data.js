@@ -114,6 +114,8 @@ export const servicesCards = [
 
 
 
+
+
  
 export const projects = [
     {
@@ -818,60 +820,125 @@ export const teamProfile = [
 
 
 
+// export const servicesLists = [
+//     {
+//         id: 'Architecture',
+//         services: [
+//             'Site Analysis',
+//             'Feasibility Studies',
+//             'Preliminary Surveys',
+//             'Brief and scope analysis',
+//             'Conceptual and Preliminary design',
+//             '3D Modelling and Rendering',
+//             'Engineering design (Structural, Mechanical, Electrical and Plumbing designs)',
+//             'Detailed design and working drawings',
+//         ]
+//     },
+//     {
+//         id: 'Consultation',
+//         services: [
+//             "Complete building construction execution (Residential, Commercial and Institutional buildings)",
+//             "Complete infrastructure design and execution (Roads, drainage, highways, bridges, dams, railways, canal lining, etc.)",
+//             "Concrete and steel design and construction",
+//             "Shoreline and coastal defense",
+//             "Material testing",
+//             "Non-Destructive Testing (NDT)",
+//             "Consultation",
+//             "Installation",
+//             "On-site supervision",
+//             "Periodic supervision and inspection"
+//         ]
+//     },
+//     {
+//         id: 'Geotechnic',
+//         services: [
+//             "Preliminary soil sampling and testing",
+//             "Material testing",
+//             "Foundation design and construction",
+//             "Borehole drilling",
+//             "Water treatment services",
+//             "Sewage treatment",
+//             "Land reclamation",
+//             "Ports and jetties"
+//         ]
+//     },
+//     {
+//         id: 'Management',
+//         services: [
+//             "Project planning, initiation, execution and control",
+//             "Project scheduling management",
+//             "Project estimating and costing",
+//             "Project quality control and assurance",
+//             "Value engineering",
+//             "Project risk analysis and management"
+//         ]
+//     },
+// ]
+
+
+
 export const servicesLists = [
-    {
-        id: 'Architecture',
-        services: [
-            'Site Analysis',
-            'Feasibility Studies',
-            'Preliminary Surveys',
-            'Brief and scope analysis',
-            'Conceptual and Preliminary design',
-            '3D Modelling and Rendering',
-            'Engineering design (Structural, Mechanical, Electrical and Plumbing designs)',
-            'Detailed design and working drawings',
-        ]
-    },
-    {
-        id: 'Consultation',
-        services: [
-            "Complete building construction execution (Residential, Commercial and Institutional buildings)",
-            "Complete infrastructure design and execution (Roads, drainage, highways, bridges, dams, railways, canal lining, etc.)",
-            "Concrete and steel design and construction",
-            "Shoreline and coastal defense",
-            "Material testing",
-            "Non-Destructive Testing (NDT)",
-            "Consultation",
-            "Installation",
-            "On-site supervision",
-            "Periodic supervision and inspection"
-        ]
-    },
-    {
-        id: 'Geotechnic',
-        services: [
-            "Preliminary soil sampling and testing",
-            "Material testing",
-            "Foundation design and construction",
-            "Borehole drilling",
-            "Water treatment services",
-            "Sewage treatment",
-            "Land reclamation",
-            "Ports and jetties"
-        ]
-    },
-    {
-        id: 'Management',
-        services: [
-            "Project planning, initiation, execution and control",
-            "Project scheduling management",
-            "Project estimating and costing",
-            "Project quality control and assurance",
-            "Value engineering",
-            "Project risk analysis and management"
-        ]
-    },
-]
+  {
+    number: "01",
+    title: "Architectural & Building Design",
+    description:
+      "We transform ideas into functional, beautiful and sustainable spaces through innovative architectural design and planning.",
+    features: [
+      "Architectural Design",
+      "Building Planning",
+      "Structural Design",
+      "Interior Design",
+      "3D Visualization",
+      "Building Approvals",
+    ],
+    icon: icon5,
+  },
+  {
+    number: "02",
+    title: "Engineering, Construction & Consultation",
+    description:
+      "Delivering reliable engineering solutions, quality construction and professional consultancy for projects of every scale.",
+    features: [
+      "Civil Engineering",
+      "Building Construction",
+      "Engineering Consultancy",
+      "Renovation & Remodeling",
+      "Project Feasibility Studies",
+      "Technical Advisory",
+    ],
+    icon: icon1,
+  },
+  {
+    number: "03",
+    title: "Geotechnical & Foundation Engineering",
+    description:
+      "We provide dependable ground investigation and foundation solutions to ensure structural stability and long-term safety.",
+    features: [
+      "Soil Investigation",
+      "Geotechnical Analysis",
+      "Foundation Design",
+      "Site Investigation",
+      "Ground Stability Assessment",
+      "Foundation Supervision",
+    ],
+    icon: icon3,
+  },
+  {
+    number: "04",
+    title: "Project & Construction Management",
+    description:
+      "From initial planning to final delivery, we manage every stage of your project with precision, transparency and efficiency.",
+    features: [
+      "Project Planning",
+      "Construction Supervision",
+      "Cost Management",
+      "Quality Control",
+      "Procurement Management",
+      "Project Monitoring",
+    ],
+    icon: icon2,
+  },
+];
 
 
 
